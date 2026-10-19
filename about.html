@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À propos — David Demoulin, CV dynamique</title>
+  <meta name="description" content="CV dynamique de David Demoulin : technicien IT, créateur d'applications, auteur et parolier (D. RAW ARK).">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <a href="index.html" class="brand">David <span class="accent">Demoulin</span></a>
+      <div class="nav-links">
+        <a href="index.html#apps">Applis</a>
+        <a href="about.html">À propos</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="about">
+    <section class="cv-header">
+      <h1 id="cvName"></h1>
+      <p class="role" id="cvRole"></p>
+      <p class="cv-loc" id="cvLoc"></p>
+      <div class="badges" id="cvBadges"></div>
+      <p class="cv-summary" id="cvSummary"></p>
+      <div class="cv-actions">
+        <a class="btn primary" href="mailto:david.demoulin@ikmail.com">✉️ Me contacter</a>
+        <a class="btn ghost" href="index.html#apps">Voir mes applis</a>
+      </div>
+    </section>
+
+    <section class="cv-section">
+      <h2>Compétences</h2>
+      <div class="skills" id="skillsList"></div>
+    </section>
+
+    <section class="cv-section">
+      <h2>Certifications</h2>
+      <ul class="certs" id="certsList"></ul>
+    </section>
+
+    <section class="cv-section">
+      <h2>Parcours</h2>
+      <ul class="timeline" id="timeline"></ul>
+    </section>
+
+    <section class="cv-section">
+      <h2>Atouts</h2>
+      <div class="soft-grid" id="softList"></div>
+    </section>
+
+    <section class="cv-section creative">
+      <h2>Et à côté du code…</h2>
+      <p class="section-intro" id="creativeIntro"></p>
+      <div class="soft-grid" id="creativeList"></div>
+    </section>
+
+    <section class="cv-section">
+      <h2>Langues & loisirs</h2>
+      <ul class="lang-list" id="langList"></ul>
+      <p class="hobbies" id="hobbies"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> David Demoulin</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/cv.js"></script>
+</body>
+</html>
