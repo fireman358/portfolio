@@ -20,3 +20,13 @@ Site vitrine statique (HTML/CSS/JS, zéro dépendance) présentant :
 ## Session découverte
 - Stockée côté navigateur (localStorage) : aucune base de données, adapté à une vitrine.
 - Les applications restant accessibles directement par leur URL, la limite est symbolique (incitation à l'exploration guidée), pas une barrière technique.
+
+## Captures d'écran des applis
+Déposez vos captures dans `img/` avec ces noms exacts :
+- `img/barakfix.png` — https://barakfix.pages.dev/
+- `img/caldemandco.png` — https://caldemandco.fireman358.workers.dev/
+- `img/keskonmagelulu.png` — https://keskonmagelulu.fireman358.workers.dev/
+- `img/laetisoftlove.png` — https://laetisoftlove.fireman358.workers.dev/
+
+Tant qu'une image est absente, la carte affiche l'icône en grand à la place.
+Au survol de l'image : la description de l'appli apparaît en overlay.

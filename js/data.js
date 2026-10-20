@@ -6,6 +6,7 @@ const APPS = [
     tags: ["Web", "Cloudflare Pages", "Productivité"],
     icon: "🔧",
     url: "https://barakfix.pages.dev/",
+    screenshot: "img/barakfix.png",
   },
   {
     id: "caldemandco",
@@ -14,6 +15,7 @@ const APPS = [
     tags: ["Web", "Cloudflare Workers", "Famille"],
     icon: "🎂",
     url: "https://caldemandco.fireman358.workers.dev/",
+    screenshot: "img/caldemandco.png",
   },
   {
     id: "keskonmagelulu",
@@ -22,6 +24,7 @@ const APPS = [
     tags: ["Web", "Cloudflare Workers", "Quotidien"],
     icon: "🍽️",
     url: "https://keskonmagelulu.fireman358.workers.dev/",
+    screenshot: "img/keskonmagelulu.png",
   },
   {
     id: "laetisoftlove",
@@ -30,6 +33,7 @@ const APPS = [
     tags: ["Web", "Cloudflare Workers", "Espace privé"],
     icon: "👑",
     url: "https://laetisoftlove.fireman358.workers.dev/",
+    screenshot: "img/laetisoftlove.png",
   },
 ];
 
