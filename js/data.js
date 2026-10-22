@@ -5,7 +5,7 @@ const APPS = [
     description: "Demandes de réparation entre bailleur et locataire — simple et tracé. Un outil web pensé pour désamorcer les conflits locatifs en structurant les échanges.",
     tags: ["Web", "Cloudflare Pages", "Productivité"],
     icon: "🔧",
-    url: "https://barakfix.pages.dev/",
+    url: "https://barakfix.edukisto.win/",
     screenshot: "img/barakfix.png",
   },
   {
@@ -14,7 +14,7 @@ const APPS = [
     description: "Le calendrier de toute la famille : anniversaires, événements, congés scolaires et rappels des prochaines dates à ne pas oublier, mois par mois.",
     tags: ["Web", "Cloudflare Workers", "Famille"],
     icon: "🎂",
-    url: "https://caldemandco.fireman358.workers.dev/",
+    url: "https://calfam.edukisto.win/",
     screenshot: "img/caldemandco.png",
   },
   {
@@ -23,7 +23,7 @@ const APPS = [
     description: "Planifie les repas de la semaine en un clin d'œil : idées menus équilibrés par catégorie (végé, poulet, poisson…), avec assouplissement « crasses » et options à commander.",
     tags: ["Web", "Cloudflare Workers", "Quotidien"],
     icon: "🍽️",
-    url: "https://keskonmagelulu.fireman358.workers.dev/",
+    url: "https://repas.edukisto.win/",
     screenshot: "img/keskonmagelulu.png",
   },
   {
@@ -32,7 +32,7 @@ const APPS = [
     description: "Outil interne protégé par mot de passe pour une équipe de conseillères : manuel, objectifs, formations, FAQ modifiable et modèles de mails. Un vrai site métier complet.",
     tags: ["Web", "Cloudflare Workers", "Espace privé"],
     icon: "👑",
-    url: "https://laetisoftlove.fireman358.workers.dev/",
+    url: "https://laetisoftlove.edukisto.win/",
     screenshot: "img/laetisoftlove.png",
   },
 ];
@@ -148,9 +148,9 @@ const CV = {
   ],
   hobbies: "Montage PC, gaming et veille techno · moto et balades · cinéphile · vie de famille",
   featured: [
-    { name: "Barakfix", link: "https://barakfix.pages.dev/" },
-    { name: "Calendrier Familial", link: "https://caldemandco.fireman358.workers.dev/" },
-    { name: "Keskônmange Lulu ?", link: "https://keskonmagelulu.fireman358.workers.dev/" },
-    { name: "Espace Manager Soft Love", link: "https://laetisoftlove.fireman358.workers.dev/" },
+    { name: "Barakfix", link: "https://barakfix.edukisto.win/" },
+    { name: "Calendrier Familial", link: "https://calfam.edukisto.win/" },
+    { name: "Keskônmange Lulu ?", link: "https://repas.edukisto.win/" },
+    { name: "Espace Manager Soft Love", link: "https://laetisoftlove.edukisto.win/" },
   ],
 };
