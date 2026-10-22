@@ -26,6 +26,13 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
 
+    grid.querySelectorAll(".card-media").forEach((media) => {
+      media.addEventListener("click", () => {
+        const btn = media.closest(".card").querySelector(".try-btn");
+        btn.click();
+      });
+    });
+
     grid.querySelectorAll(".try-btn").forEach((btn) => {
       btn.addEventListener("click", () => {
         if (!Session.isActive()) {
