@@ -333,3 +333,6 @@ body:not(.session-active) .try-btn { opacity: 1; }
   margin:0 .8rem;
   letter-spacing:-1px;
 }
+
+.brand-home{display:inline-block;text-decoration:none;transition:transform .2s ease}
+.brand-home:hover{transform:scale(1.06)}
