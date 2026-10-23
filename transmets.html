@@ -32,8 +32,6 @@
   <section class="apps page-head">
     <h1 class="page-title">Transmission</h1>
     <p class="section-desc">Cours d'informatique individuels ou en petit groupe — du premier clic à l'IA générative.</p>
-    <div id="serviceGrid" class="grid"></div>
-
     <div class="teaching-detail">
       <p class="teaching-proof">Ma force : 25 ans d'expérience dans l'accompagnement éducatif associés à une spécialisation en administration systèmes & réseaux. J'adapte chaque séance à votre rythme, sans jugement, avec une vraie écoute.</p>
       <div class="teaching-grid">
@@ -79,25 +77,6 @@
   <script src="js/session.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
-      const serviceGrid = document.getElementById("serviceGrid");
-      if (serviceGrid && typeof SERVICES !== "undefined") {
-        serviceGrid.innerHTML = SERVICES.map((s) => `
-          <article class="card service-card" data-id="${s.id}">
-            <div class="card-media no-img">
-              <div class="media-fallback"><span>${s.icon}</span></div>
-              <div class="media-overlay">
-                <p>${s.description}</p>
-                <span class="overlay-cta">En savoir plus →</span>
-              </div>
-            </div>
-            <div class="card-body">
-              <h3>${s.name} <span class="service-badge">service</span></h3>
-              <div class="card-tags">${s.tags.map((t) => `<span class="tag">${t}</span>`).join("")}</div>
-              <a class="btn primary small" href="mailto:david.demoulin@ikmail.com?subject=Cours%20d'informatique">🎓 Demander un cours</a>
-            </div>
-          </article>
-        `).join("");
-      }
       document.getElementById("year").textContent = new Date().getFullYear();
     });
   </script>

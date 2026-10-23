@@ -137,8 +137,15 @@ const CV = {
   ],
   creative: {
     intro:
-      "Avant le code, il y a l'écriture et la musique. Sous le pseudo D. RAW ARK, j'écris mes textes et dirige l'univers artistique de mes titres — la création assiste, la plume reste à moi.",
+      "L'informatique n'a pas le monopole de la création. Sous le pseudo D. RAW ARK, j'écris mes textes et dirige l'univers artistique de mes titres — la plume reste à moi. Et j'édite aussi un site passion sur le tir et la défense.",
     items: [
+      {
+        icon: "🎯",
+        title: "Tir & Défense Belgique — webmaster",
+        text: "Un site d'actualité et de tests sur le tir sportif et l'équipement de défense : création, rédaction, gestion et animation au quotidien.",
+        link: "https://tir-defense-belgique.be/",
+        linkLabel: "🎯 Visiter le site",
+      },
       {
         icon: "📖",
         title: "De la chute au clan : itinéraire d'un survivant",
