@@ -28,11 +28,11 @@ const APPS = [
   },
   {
     id: "laetisoftlove",
-    name: "Espace Manager — Soft Love",
-    description: "Outil interne protégé par mot de passe pour une équipe de conseillères : manuel, objectifs, formations, FAQ modifiable et modèles de mails. Un vrai site métier complet.",
-    tags: ["Web", "Cloudflare Workers", "Espace privé"],
+    name: "Espace Manager — Lumen & Co (démo)",
+    description: "Outil interne d'équipe protégé par mot de passe : manuel, objectifs, formations, FAQ modifiable par la manager et modèles de mails. Essayez la démo complète (marque fictive) — accès : demo.",
+    tags: ["Web", "Cloudflare Workers", "Espace privé", "Démo"],
     icon: "👑",
-    url: "https://laetisoftlove.edukisto.win/",
+    url: "https://manager.edukisto.win/",
     screenshot: "img/laetisoftlove.png",
   },
 ];
@@ -151,6 +151,6 @@ const CV = {
     { name: "Barakfix", link: "https://barakfix.edukisto.win/" },
     { name: "Calendrier Familial (démo)", link: "https://caldemo.edukisto.win/" },
     { name: "Keskônmange Lulu ?", link: "https://repas.edukisto.win/" },
-    { name: "Espace Manager Soft Love", link: "https://laetisoftlove.edukisto.win/" },
+    { name: "Espace Manager (démo)", link: "https://manager.edukisto.win/" },
   ],
 };
