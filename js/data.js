@@ -174,7 +174,7 @@ const CV = {
     { name: "Néerlandais", level: "Notions" },
     { name: "Espéranto", level: "Notions" },
   ],
-  hobbies: "Montage PC, gaming et veille techno · moto · spéléo & canyoning · cinéphile · vie de famille",
+  hobbies: "Montage PC, gaming et veille techno · tir sportif (licencié, toutes catégories A-B-C-D) · moto · spéléo & canyoning · cinéphile · vie de famille",
   teaching: {
     title: "Cours d'informatique & accompagnement numérique",
     intro: "Vous souhaitez être à l'aise avec les technologies, comprendre le code ou utiliser l'intelligence artificielle sans vous perdre dans le jargon ? Mon objectif : rendre l'informatique accessible, stimulante et directement utile à vos projets.",
