@@ -396,3 +396,9 @@ body:not(.session-active) .try-btn { opacity: 1; }
 .duo-card h2{ font-size:1.25rem; }
 .duo-card p{ color:var(--muted); font-size:.95rem; flex-grow:1; }
 @media (max-width:800px){ .duo{ grid-template-columns:1fr; } }
+
+/* ===== Pages dédiées (construis/transmets) ===== */
+.page-head{ padding-top:2.5rem; }
+.page-title{ text-align:center; font-size:clamp(1.9rem, 4vw, 2.8rem); margin-bottom:.6rem; }
+.nav-links a.active{ color:var(--text); border-bottom:2px solid #38bdf8; padding-bottom:2px; }
+.teaching-detail{ max-width:900px; margin:2.5rem auto 0; padding:0 1.5rem; }
