@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EDUKISTO — prévisualisation identité</title>
+<style>
+:root{
+  --bg:#0f1115; --surface:#171a21; --text:#e8eaf0; --muted:#9aa3b2;
+  --accent:#ff7a18; --accent2:#ffb347; --border:#262b36; --radius:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;padding:40px 20px 80px}
+.wrap{max-width:900px;margin:0 auto}
+h1{font-size:1.9rem;margin-bottom:.3rem}
+h1 span{color:var(--accent)}
+.kicker{color:var(--accent2);text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;font-weight:700;margin-bottom:.8rem}
+.intro{color:var(--muted);max-width:640px;margin-bottom:2.5rem}
+h2{font-size:1.15rem;margin:3rem 0 1rem;border-bottom:1px solid var(--border);padding-bottom:.5rem}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:28px;margin-bottom:1.2rem}
+.glyphrow{display:flex;align-items:center;gap:28px;flex-wrap:wrap}
+.glyph-big{width:64px;height:64px;flex-shrink:0}
+.glyph-demo{flex:1;min-width:250px}
+.demo-line{display:flex;align-items:center;gap:10px;font-size:1.05rem}
+.demo-line .g16{width:16px;height:16px;flex-shrink:0}
+.sig-dash{opacity:.45;letter-spacing:-2px}
+.links{color:inherit;text-decoration:none;letter-spacing:.02em;cursor:pointer}
+.links:hover{color:var(--accent2)}
+.row{display:flex;gap:18px;align-items:center;margin-top:14px;flex-wrap:wrap}
+.chip{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:8px 14px;font-size:.85rem;color:var(--muted);display:flex;align-items:center;gap:8px}
+.chip .g14{width:14px;height:14px;color:var(--accent)}
+.onlight{background:#f7f5f2;color:#3a3a42;padding:14px;border-radius:10px;margin-top:14px;display:flex;align-items:center;justify-content:center;gap:10px;font-size:1rem}
+.onlight svg{color:#c2410c}
+.onlight .sig-dash{color:#b9b4ac}
+.verdict{margin-top:14px;color:var(--muted);font-size:.92rem;border-left:3px solid var(--accent);padding-left:14px}
+.system-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;margin-top:1rem}
+.sys{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:18px}
+.sys h3{font-size:.95rem;color:var(--accent2);margin-bottom:.5rem}
+.sys p{font-size:.85rem;color:var(--muted)}
+.swatch{display:inline-block;width:14px;height:14px;border-radius:4px;vertical-align:-2px;margin-right:6px}
+.tok{font-family:ui-monospace,Consolas,monospace;font-size:.78rem;background:var(--bg);padding:2px 8px;border-radius:6px;border:1px solid var(--border)}
+.mocktitle{display:flex;gap:6px;align-items:center;background:#22252e;border-radius:8px 8px 0 0;padding:8px 12px;font-size:.8rem;color:#cfd5e0;max-width:340px}
+.mocktab{background:#2e323e;border-radius:6px 6px 0 0;padding:5px 12px;display:flex;gap:7px;align-items:center}
+.mocktab svg{width:13px;height:13px;color:var(--accent)}
+.mocktab .x{margin-left:8px;opacity:.4}
+.mockbar{background:#1b1e26;height:10px;border-radius:0 8px 8px 8px;max-width:340px;border:1px solid var(--border);border-top:none}
+.note{background:rgba(255,122,24,.08);border:1px solid rgba(255,122,24,.35);border-radius:var(--radius);padding:18px 22px;margin-top:1.5rem;font-size:.95rem;color:var(--muted)}
+.note strong{color:var(--accent2)}
+footer{margin-top:3.5rem;text-align:center;color:var(--muted);font-size:.8rem;opacity:.7}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<p class="kicker">Prévisualisation — à choisir ensemble</p>
+<h1>Identité <span>EDUKISTO</span> — 3 glyphes candidats</h1>
+<p class="intro">Chaque glyphe est dessiné en SVG (vectoriel, une seule couleur, hérite du thème de l'app). Voici comment il se comporte en signature, en petit format (favicon) et sur fond clair — les trois tests qu'une marque doit passer.</p>
+
+<!-- ============ FLAMME ============ -->
+<h2>Option 1 — La flamme</h2>
+<div class="card">
+  <div class="glyphrow">
+    <svg class="glyph-big" viewBox="0 0 24 24" fill="none">
+      <path d="M12.4 2.3c.4 3.2-2.9 4.9-2.9 8.6 0 1 .4 1.9 1.1 2.5-.1-1.5.4-2.7 1.3-3.7.1 1.9 1.7 2.5 1.7 4.4 0 2.6-2.1 4.6-4.7 4.6a4.7 4.7 0 0 1-4.7-4.9c0-4.9 5.8-6.8 8.2-11.5z" fill="currentColor"/>
+      <path d="M12.7 13.4c1-1.6 2.8-2.4 3.1-4.8 2.1 2.8 3.4 5.3 3.4 8.1 0 3.8-3.1 6.8-7 6.8-1.2 0-2.3-.3-3.3-.8 2.8-.4 4.9-2.8 4.9-5.5 0-1.4-.5-2.6-1.1-3.8z" fill="currentColor" opacity=".4"/>
+    </svg>
+    <div class="glyph-demo">
+      <div class="demo-line">
+        <span class="sig-dash">──</span>
+        <svg class="g16" viewBox="0 0 24 24"><path d="M12.4 2.3c.4 3.2-2.9 4.9-2.9 8.6 0 1 .4 1.9 1.1 2.5-.1-1.5.4-2.7 1.3-3.7.1 1.9 1.7 2.5 1.7 4.4 0 2.6-2.1 4.6-4.7 4.6a4.7 4.7 0 0 1-4.7-4.9c0-4.9 5.8-6.8 8.2-11.5z" fill="currentColor"/></svg>
+        <span class="links">edukisto</span>
+        <span class="sig-dash">──</span>
+      </div>
+      <div class="row">
+        <span class="chip"><svg class="g14" viewBox="0 0 24 24"><path d="M12.4 2.3c.4 3.2-2.9 4.9-2.9 8.6 0 1 .4 1.9 1.1 2.5-.1-1.5.4-2.7 1.3-3.7.1 1.9 1.7 2.5 1.7 4.4 0 2.6-2.1 4.6-4.7 4.6a4.7 4.7 0 0 1-4.7-4.9c0-4.9 5.8-6.8 8.2-11.5z" fill="currentColor"/></svg> favicon</span>
+        <span class="chip"><svg class="g14" viewBox="0 0 24 24"><path d="M12.4 2.3c.4 3.2-2.9 4.9-2.9 8.6 0 1 .4 1.9 1.1 2.5-.1-1.5.4-2.7 1.3-3.7.1 1.9 1.7 2.5 1.7 4.4 0 2.6-2.1 4.6-4.7 4.6a4.7 4.7 0 0 1-4.7-4.9c0-4.9 5.8-6.8 8.2-11.5z" fill="currentColor"/></svg> 14px</span>
+        <span class="chip"><svg class="g14" viewBox="0 0 24 24"><path d="M12.4 2.3c.4 3.2-2.9 4.9-2.9 8.6 0 1 .4 1.9 1.1 2.5-.1-1.5.4-2.7 1.3-3.7.1 1.9 1.7 2.5 1.7 4.4 0 2.6-2.1 4.6-4.7 4.6a4.7 4.7 0 0 1-4.7-4.9c0-4.9 5.8-6.8 8.2-11.5z" fill="currentColor"/></svg> bouton</span>
+      </div>
+      <div class="onlight">
+        <span class="sig-dash">──</span>
+        <svg class="g16" viewBox="0 0 24 24"><path d="M12.4 2.3c.4 3.2-2.9 4.9-2.9 8.6 0 1 .4 1.9 1.1 2.5-.1-1.5.4-2.7 1.3-3.7.1 1.9 1.7 2.5 1.7 4.4 0 2.6-2.1 4.6-4.7 4.6a4.7 4.7 0 0 1-4.7-4.9c0-4.9 5.8-6.8 8.2-11.5z" fill="currentColor"/></svg>
+        edukisto
+        <span class="sig-dash">──</span>
+      </div>
+    </div>
+  </div>
+  <p class="verdict"><strong>Ce qu'elle dit :</strong> l'urgence, le feu qu'on couve, accompagner ce qui brûle — votre histoire de pompier et d'éducateur. Chaude, vivante, mémorable. Risque : légèrement plus « narratif » que sobre ; demande un dessin très fin pour rester pro.</p>
+</div>
+
+<!-- ============ BOUSSOLE ============ -->
+<h2>Option 2 — La boussole</h2>
+<div class="card">
+  <div class="glyphrow">
+    <svg class="glyph-big" viewBox="0 0 24 24" fill="none">
+      <circle cx="12" cy="12" r="8.8" stroke="currentColor" stroke-width="1.5"/>
+      <path d="M12 4.4l1.8 5.8 5.8 1.8-5.8 1.8L12 19.6l-1.8-5.8-5.8-1.8 5.8-1.8z" fill="currentColor"/>
+      <circle cx="12" cy="12" r="1.1" fill="var(--bg)"/>
+    </svg>
+    <div class="glyph-demo">
+      <div class="demo-line">
+        <span class="sig-dash">──</span>
+        <svg class="g16" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.8" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="M12 4.4l1.8 5.8 5.8 1.8-5.8 1.8L12 19.6l-1.8-5.8-5.8-1.8 5.8-1.8z" fill="currentColor"/></svg>
+        <span class="links">edukisto</span>
+        <span class="sig-dash">──</span>
+      </div>
+      <div class="row">
+        <span class="chip"><svg class="g14" viewBox="0 0 24 24"><path d="M12 4.4l1.8 5.8 5.8 1.8-5.8 1.8L12 19.6l-1.8-5.8-5.8-1.8 5.8-1.8z" fill="currentColor"/></svg> favicon</span>
+        <span class="chip"><svg class="g14" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.8" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="M12 4.4l1.8 5.8 5.8 1.8-5.8 1.8L12 19.6l-1.8-5.8-5.8-1.8 5.8-1.8z" fill="currentColor"/></svg> 14px</span>
+        <span class="chip"><svg class="g14" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.8" stroke="currentColor" stroke-width="1.8" fill="none"/></svg> cadre</span>
+      </div>
+      <div class="onlight">
+        <span class="sig-dash">──</span>
+        <svg class="g16" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.8" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="M12 4.4l1.8 5.8 5.8 1.8-5.8 1.8L12 19.6l-1.8-5.8-5.8-1.8 5.8-1.8z" fill="currentColor"/></svg>
+        edukisto
+        <span class="sig-dash">──</span>
+      </div>
+    </div>
+  </div>
+  <p class="verdict"><strong>Ce qu'elle dit :</strong> orienter, guider, remettre sur les rails — l'éducateur qui montre le cap, le technicien qui résout. Universelle, très pro, lisible à 12px. Risque : symbole assez répandu (moins « unique » qu'une flamme dessinée pour vous).</p>
+</div>
+
+<!-- ============ NŒUD ============ -->
+<h2>Option 3 — Le nœud (infini)</h2>
+<div class="card">
+  <div class="glyphrow">
+    <svg class="glyph-big" viewBox="0 0 24 24" fill="none">
+      <path d="M12 12c-1.9-2.4-3.6-4.5-6-4.5a4.5 4.5 0 1 0 0 9c2.4 0 4.1-2.1 6-4.5zm0 0c1.9 2.4 3.6 4.5 6 4.5a4.5 4.5 0 1 0 0-9c-2.4 0-4.1 2.1-6 4.5z" stroke="currentColor" stroke-width="1.7"/>
+    </svg>
+    <div class="glyph-demo">
+      <div class="demo-line">
+        <span class="sig-dash">──</span>
+        <svg class="g16" viewBox="0 0 24 24"><path d="M12 12c-1.9-2.4-3.6-4.5-6-4.5a4.5 4.5 0 1 0 0 9c2.4 0 4.1-2.1 6-4.5zm0 0c1.9 2.4 3.6 4.5 6 4.5a4.5 4.5 0 1 0 0-9c-2.4 0-4.1 2.1-6 4.5z" stroke="currentColor" stroke-width="1.8" fill="none"/></svg>
+        <span class="links">edukisto</span>
+        <span class="sig-dash">──</span>
+      </div>
+      <div class="row">
+        <span class="chip"><svg class="g14" viewBox="0 0 24 24"><path d="M12 12c-1.9-2.4-3.6-4.5-6-4.5a4.5 4.5 0 1 0 0 9c2.4 0 4.1-2.1 6-4.5zm0 0c1.9 2.4 3.6 4.5 6 4.5a4.5 4.5 0 1 0 0-9c-2.4 0-4.1 2.1-6 4.5z" stroke="currentColor" stroke-width="2" fill="none"/></svg> favicon</span>
+        <span class="chip"><svg class="g14" viewBox="0 0 24 24"><path d="M12 12c-1.9-2.4-3.6-4.5-6-4.5a4.5 4.5 0 1 0 0 9c2.4 0 4.1-2.1 6-4.5zm0 0c1.9 2.4 3.6 4.5 6 4.5a4.5 4.5 0 1 0 0-9c-2.4 0-4.1 2.1-6 4.5z" stroke="currentColor" stroke-width="2" fill="none"/></svg> 14px</span>
+        <span class="chip"><svg class="g14" viewBox="0 0 24 24"><path d="M12 12c-1.9-2.4-3.6-4.5-6-4.5a4.5 4.5 0 1 0 0 9c2.4 0 4.1-2.1 6-4.5zm0 0c1.9 2.4 3.6 4.5 6 4.5a4.5 4.5 0 1 0 0-9c-2.4 0-4.1 2.1-6 4.5z" stroke="currentColor" stroke-width="2" fill="none"/></svg> bouton</span>
+      </div>
+      <div class="onlight">
+        <span class="sig-dash">──</span>
+        <svg class="g16" viewBox="0 0 24 24"><path d="M12 12c-1.9-2.4-3.6-4.5-6-4.5a4.5 4.5 0 1 0 0 9c2.4 0 4.1-2.1 6-4.5zm0 0c1.9 2.4 3.6 4.5 6 4.5a4.5 4.5 0 1 0 0-9c-2.4 0-4.1 2.1-6 4.5z" stroke="currentColor" stroke-width="1.8" fill="none"/></svg>
+        edukisto
+        <span class="sig-dash">──</span>
+      </div>
+    </div>
+  </div>
+  <p class="verdict"><strong>Ce qu'il dit :</strong> le lien, l'accompagnement continu, « on reste connectés » — très juste pour EDUKISTO (l'accompagnement sans fin, la relation). Élégant, intemporel, discret. Risque : plus abstrait, moins raconté — il ne « dit » son sens qu'à qui le connaît.</p>
+</div>
+
+<!-- ============ SYSTÈME DE MARQUE ============ -->
+<h2>Et au-delà de la signature : le système de marque (votre idée « Microsoft »)</h2>
+<p class="intro">Une fois le glyphe choisi, voici les couches qui rendent EDUKISTO reconnaissable partout — de la même façon que Microsoft (Fluent) garde ses apps unies sans les rendre identiques :</p>
+
+<div class="system-grid">
+  <div class="sys">
+    <h3>1 · Le glyphe</h3>
+    <p>Le même SVG partout : signature, favicon, icône d'installation PWA, marque-page. C'est le socle — la reconnaissance instantanée.</p>
+  </div>
+  <div class="sys">
+    <h3>2 · Le favicon</h3>
+    <p>Aujourd'hui : calfam et barakfix n'en ont pas (l'onglet affiche une icône générique). Demain : le glyphe sur fond sombre dans chaque onglet — vos 5 sites se reconnaissent dans la barre d'onglets.</p>
+    <div class="row">
+      <div class="mocktitle" style="margin-top:12px"><div class="mocktab"><svg viewBox="0 0 24 24"><path d="M12 4.4l1.8 5.8 5.8 1.8-5.8 1.8L12 19.6l-1.8-5.8-5.8-1.8 5.8-1.8z" fill="currentColor"/></svg> calfam<span class="x">✕</span></div></div>
+    </div>
+  </div>
+  <div class="sys">
+    <h3>3 · Le titre d'onglet</h3>
+    <p>Pattern unique : <span class="tok">Nom · edukisto</span><br>« Barakfix · edukisto », « Calendrier familial · edukisto »… Chaque onglet, favori et partage de lien porte la marque.</p>
+  </div>
+  <div class="sys">
+    <h3>4 · La couleur signal</h3>
+    <p>Un accent orange EDUKISTO réservé aux moments de marque (signature, favicon, liens sortants) :<br><span class="swatch" style="background:#ff7a18"></span><span class="tok">#ff7a18</span> <span class="swatch" style="background:#ffb347;margin-left:8px"></span><span class="tok">#ffb347</span></p>
+    <p style="margin-top:8px">Les thèmes des apps restent les leurs (prune pour Soft Love, slate pour Barakfix) — l'orange n'apparaît que pour la marque, comme le rouge Coca sur des canettes différentes.</p>
+  </div>
+  <div class="sys">
+    <h3>5 · Le « kit de marque »</h3>
+    <p>Un dossier <span class="tok">brand/</span> dans chaque dépôt : glyph.svg, favicon.png (192/512), manifeste PWA cohérent, README de la charte. Application identique, partout.</p>
+  </div>
+  <div class="sys">
+    <h3>6 · Ce qu'on ne fait PAS</h3>
+    <p>Microsoft n'uniformise pas non plus ses surfaces : Teams ≠ Outlook ≠ Xbox. Soft Love doit rester prune/intime, Barakfix slate/pro. On unifie <strong>la marque</strong>, pas <strong>le thème</strong>.</p>
+  </div>
+</div>
+
+<div class="note">
+<strong>Comment choisir ?</strong> Ouvrez cette page sur votre téléphone et sur votre PC, plissez les yeux : quel glyphe reste reconnaissable à 14&nbsp;px ? Lequel raconte le mieux EDUKISTO — le feu qu'on accompagne (flamme), le cap qu'on montre (boussole), ou le lien qu'on tisse (nœud) ? Dites-moi votre choix (ou un mélange, ex. « flamme mais plus fine ») et j'applique le système complet sur les 5 sites.
+</div>
+
+<footer>Page de prévisualisation temporaire — edukisto.win/preview-branding.html · sera retirée après décision</footer>
+</div>
+</body>
+</html>
