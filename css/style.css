@@ -299,10 +299,7 @@ body:not(.session-active) .try-btn { opacity: 1; }
 .sig-mark{color:inherit;text-decoration:none;letter-spacing:.02em}
 .sig-mark:hover{color:#38bdf8}
 
-/* ===== Logo edukisto en majesté ===== */
-.hero-logo{ display:flex; justify-content:center; margin-bottom:1.6rem; animation: logoIn .8s ease both; }
-.hero-logo svg{ width:clamp(48px, 8vw, 76px); height:auto; filter:drop-shadow(0 0 18px rgba(56,189,248,.25)); }
-.cv-logo{ display:flex; justify-content:center; margin-bottom:1.2rem; }
-.cv-logo svg{ width:36px; height:auto; opacity:.92; }
-@keyframes logoIn{ from{ opacity:0; transform:scale(.85) rotate(-90deg); } to{ opacity:1; transform:scale(1) rotate(0deg); } }
-@media (prefers-reduced-motion: reduce){ .hero-logo{ animation:none; } }
+/* ===== Logo edukisto: sous le nom dans la navbar ===== */
+.brand-wrap{ display:inline-flex; flex-direction:column; align-items:flex-start; gap:2px; text-decoration:none; }
+.nav-logo{ display:inline-flex; line-height:0; }
+.nav-logo svg{ width:28px; height:28px; filter:drop-shadow(0 0 10px rgba(56,189,248,.3)); }
