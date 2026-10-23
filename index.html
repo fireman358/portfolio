@@ -31,19 +31,35 @@
   </header>
 
   <section class="hero">
-    <p class="hero-kicker">Technicien IT & Réseaux · Seneffe, Belgique</p>
-    <h1>Des applications qui <span class="accent">règlent la vraie vie</span></h1>
-    <p class="subtitle">
-      Réparation locative, calendrier familial, plan de repas, outil métier :
-      chaque app est née d'un besoin concret — le mien ou celui des gens qui m'entourent.
-    </p>
-    <div class="hero-cta">
-      <button id="startSession" class="btn primary">▶ Session découverte : 1h pour tout tester</button>
-      <a href="about.html" class="btn ghost">Mon parcours</a>
+    <div class="hero-grid">
+      <div class="hero-text">
+        <p class="hero-kicker">Technicien IT & Réseaux · Seneffe, Belgique</p>
+        <h1>25 ans à accompagner des personnes.<br>Aujourd'hui, <span class="accent">je les équipe.</span></h1>
+        <p class="subtitle">
+          Éducateur, pompier, technicien en reconversion certifiée : je construis des outils qui simplifient la vraie vie — et je transmets l'informatique
+          à ceux qui en ont besoin.
+        </p>
+        <div class="hero-cta">
+          <a href="about.html" class="btn primary">Mon parcours</a>
+          <a href="#apps" class="btn ghost">Mes applications</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="img/david.jpg" alt="David Demoulin" loading="eager">
+      </div>
     </div>
     <div id="sessionBanner" class="session-banner hidden">
       <p>🔓 <strong>Session découverte active</strong> — encore <span id="bannerTime">60:00</span> pour explorer librement.</p>
       <button id="extendBtn" class="link-btn">+ 15 min</button>
+    </div>
+  </section>
+
+  <!-- ===== QUI SUIS-JE : 3 repères ===== -->
+  <section class="stats">
+    <div class="stats-row">
+      <div class="stat"><span class="stat-num">25</span><span class="stat-label">années d'accompagnement<br>éducatif & de terrain</span></div>
+      <div class="stat"><span class="stat-num">6</span><span class="stat-label">certifications IT<br>réseaux, systèmes, GLPI</span></div>
+      <div class="stat"><span class="stat-num">5</span><span class="stat-label">applications & services<br>en production</span></div>
     </div>
   </section>
 
@@ -59,9 +75,16 @@
   </section>
 
   <section id="apps" class="apps">
-    <h2>Mes applications</h2>
-    <p class="section-desc">Accessibles librement pendant la session découverte d'une heure. Tout est en ligne, rien à installer.</p>
+    <h2>Ce que je construis</h2>
+    <p class="section-desc">Applications en production, accessibles librement pendant la session découverte d'une heure.</p>
+    <div class="apps-session-start"><button id="startSession" class="btn ghost small">▶ Session découverte : 1h pour tout tester</button></div>
     <div id="appGrid" class="grid"></div>
+  </section>
+
+  <!-- ===== CE QUE JE TRANSMETS ===== -->
+  <section class="apps teaching-home">
+    <h2>Ce que je transmets</h2>
+    <p class="section-desc">Cours d'informatique individuels ou en petit groupe — du premier clic à l'IA générative.</p>
     <div id="serviceGrid" class="grid"></div>
   </section>
 
@@ -73,8 +96,6 @@
       <a href="https://github.com/fireman358" target="_blank" rel="noopener">GitHub</a>
       <span>·</span>
       <span>Seneffe, Belgique</span>
-      <span>·</span>
-      <span>Permis A, B, C</span>
     </div>
   </section>
 
