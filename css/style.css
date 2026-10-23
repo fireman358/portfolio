@@ -303,3 +303,33 @@ body:not(.session-active) .try-btn { opacity: 1; }
 .brand-wrap{ display:inline-flex; flex-direction:column; align-items:flex-start; gap:2px; text-decoration:none; }
 .nav-logo{ display:inline-flex; line-height:0; }
 .nav-logo svg{ width:28px; height:28px; filter:drop-shadow(0 0 10px rgba(56,189,248,.3)); }
+
+/* ===== Section marque edukisto (mi-page) ===== */
+.brand-stage{
+  text-align:center;
+  padding:3.5rem 1rem 2.5rem;
+  max-width:600px;
+  margin:0 auto;
+  position:relative;
+}
+.brand-stage svg{ width:clamp(90px, 15vw, 130px); height:auto; filter:drop-shadow(0 0 26px rgba(56,189,248,.28)); }
+.brand-word{
+  font-size:clamp(1.5rem, 3.5vw, 2rem);
+  font-weight:800;
+  letter-spacing:.06em;
+  color:var(--text);
+  margin-top:.9rem;
+}
+.brand-motto{
+  font-size:.95rem;
+  color:var(--muted);
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  margin-top:.2rem;
+}
+.brand-motto::before, .brand-motto::after{
+  content:"──";
+  opacity:.4;
+  margin:0 .8rem;
+  letter-spacing:-1px;
+}
