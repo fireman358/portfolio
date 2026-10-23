@@ -11,10 +11,10 @@ const APPS = [
   {
     id: "caldemandco",
     name: "Calendrier Familial",
-    description: "Le calendrier de toute la famille : anniversaires, événements, congés scolaires et rappels des prochaines dates à ne pas oublier, mois par mois.",
-    tags: ["Web", "Cloudflare Workers", "Famille"],
+    description: "Le calendrier de toute la famille : anniversaires, événements, congés scolaires et rappels des prochaines dates à ne pas oublier, mois par mois. Essayez la démo interactive (famille fictive).",
+    tags: ["Web", "Cloudflare Workers", "Famille", "Démo"],
     icon: "🎂",
-    url: "https://calfam.edukisto.win/",
+    url: "https://caldemo.edukisto.win/",
     screenshot: "img/caldemandco.png",
   },
   {
@@ -149,7 +149,7 @@ const CV = {
   hobbies: "Montage PC, gaming et veille techno · moto et balades · cinéphile · vie de famille",
   featured: [
     { name: "Barakfix", link: "https://barakfix.edukisto.win/" },
-    { name: "Calendrier Familial", link: "https://calfam.edukisto.win/" },
+    { name: "Calendrier Familial (démo)", link: "https://caldemo.edukisto.win/" },
     { name: "Keskônmange Lulu ?", link: "https://repas.edukisto.win/" },
     { name: "Espace Manager Soft Love", link: "https://laetisoftlove.edukisto.win/" },
   ],
