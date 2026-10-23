@@ -35,6 +35,14 @@ const APPS = [
     url: "https://manager.edukisto.win/",
     screenshot: "img/laetisoftlove.png",
   },
+  {
+    id: "tirdefense",
+    name: "Tir & Défense Belgique",
+    description: "Site d'actualité et de tests sur le tir sportif et l'équipement de défense : création, rédaction, SEO, gestion et animation quotidienne d'un média en ligne.",
+    tags: ["WordPress", "SEO", "Rédaction", "Webmastering"],
+    icon: "🎯",
+    url: "https://tir-defense-belgique.be/",
+  },
 ];
 
 // Carte service affichée sur l'accueil après les applis

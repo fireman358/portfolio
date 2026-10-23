@@ -62,22 +62,25 @@ document.addEventListener("DOMContentLoaded", () => {
     )
     .join("");
 
-  // Section cours
+  // Section cours (seulement si présente sur la page)
   const t = CV.teaching;
-  document.querySelector(".teaching-section h2").textContent = "Former & transmettre — " + t.title.split(" &")[0];
-  document.getElementById("teachingIntro").textContent = t.intro;
-  document.getElementById("teachingProof").textContent = t.proof;
-  document.getElementById("teachingModules").innerHTML = t.modules.map((m) => `
-    <div class="teach-card">
-      <div class="teach-icon">${m.icon}</div>
-      <h3>${m.title}${m.spec ? ` <span class="spec-tag">${m.spec}</span>` : ""}</h3>
-      <p>${m.text}</p>
-    </div>
-  `).join("");
-  document.getElementById("teachingPractical").textContent = "📍 " + t.practical;
-  const sp = document.getElementById("superprofLink");
-  sp.href = t.superprof.link;
-  sp.title = t.superprof.label + " — " + t.superprof.detail;
+  const ti = document.getElementById("teachingIntro");
+  if (ti && t) {
+    document.querySelector(".teaching-section h2").textContent = "Former & transmettre — " + t.title.split(" &")[0];
+    ti.textContent = t.intro;
+    document.getElementById("teachingProof").textContent = t.proof;
+    document.getElementById("teachingModules").innerHTML = t.modules.map((m) => `
+      <div class="teach-card">
+        <div class="teach-icon">${m.icon}</div>
+        <h3>${m.title}${m.spec ? ` <span class="spec-tag">${m.spec}</span>` : ""}</h3>
+        <p>${m.text}</p>
+      </div>
+    `).join("");
+    document.getElementById("teachingPractical").textContent = "📍 " + t.practical;
+    const sp = document.getElementById("superprofLink");
+    sp.href = t.superprof.link;
+    sp.title = t.superprof.label + " — " + t.superprof.detail;
+  }
 
   document.getElementById("langList").innerHTML = CV.languages
     .map((l) => `<li><strong>${l.name}</strong> — ${l.level}</li>`)
