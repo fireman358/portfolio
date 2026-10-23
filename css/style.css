@@ -336,3 +336,21 @@ body:not(.session-active) .try-btn { opacity: 1; }
 
 .brand-home{display:inline-block;text-decoration:none;transition:transform .2s ease}
 .brand-home:hover{transform:scale(1.06)}
+
+/* ===== Section cours / formation ===== */
+.teaching-section h2 { border-color: #38bdf8; }
+.teaching-proof{ color:var(--muted); max-width:640px; margin:0 0 1.5rem; font-size:.95rem; border-left:3px solid var(--accent); padding-left:14px; }
+.teaching-grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); gap:1rem; }
+.teach-card{ background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:1.2rem; transition: border-color .2s ease; }
+.teach-card:hover{ border-color:#38bdf8; }
+.teach-icon{ font-size:1.7rem; margin-bottom:.5rem; }
+.teach-card h3{ font-size:.98rem; margin-bottom:.5rem; color:#7dd3fc; display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+.teach-card p{ color:var(--muted); font-size:.88rem; }
+.spec-tag{ font-size:.68rem; background:rgba(14,116,144,.25); color:#7dd3fc; padding:2px 8px; border-radius:999px; border:1px solid rgba(14,116,144,.5); font-weight:700; letter-spacing:.03em; }
+.teaching-practical{ margin-top:1.3rem; color:var(--muted); font-size:.9rem; }
+.teaching-cta{ display:flex; gap:1rem; margin-top:1.5rem; flex-wrap:wrap; }
+.superprof-btn:hover{ border-color:#38bdf8; color:#7dd3fc; }
+
+/* ===== Carte service (cours) ===== */
+.service-card{ border-style:dashed; }
+.service-badge{ font-size:.6rem; background:rgba(56,189,248,.15); color:#7dd3fc; padding:2px 8px; border-radius:999px; border:1px solid rgba(56,189,248,.4); text-transform:uppercase; letter-spacing:.08em; font-weight:700; vertical-align:middle; margin-left:6px; }

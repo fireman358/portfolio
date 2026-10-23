@@ -37,6 +37,19 @@ const APPS = [
   },
 ];
 
+// Carte service affichée sur l'accueil après les applis
+const SERVICES = [
+  {
+    id: "cours",
+    name: "Cours d'informatique",
+    description: "Systèmes & réseaux (ma spécialisation), sécurité numérique, initiation à l'IA, bases du code, bureautique. 25 ans de pédagogie à votre service — 1er cours offert.",
+    tags: ["Enseignement", "IA générative", "Débutants bienvenus"],
+    icon: "🎓",
+    type: "service",
+    link: "about.html#formation",
+  },
+];
+
 const CV = {
   name: "David Demoulin",
   role: "Technicien IT & Réseaux — Développeur d'applications web",
@@ -147,6 +160,45 @@ const CV = {
     { name: "Espéranto", level: "Notions" },
   ],
   hobbies: "Montage PC, gaming et veille techno · moto et balades · cinéphile · vie de famille",
+  teaching: {
+    title: "Cours d'informatique & accompagnement numérique",
+    intro: "Vous souhaitez être à l'aise avec les technologies, comprendre le code ou utiliser l'intelligence artificielle sans vous perdre dans le jargon ? Mon objectif : rendre l'informatique accessible, stimulante et directement utile à vos projets.",
+    proof: "Ma force : 25 ans d'expérience dans l'accompagnement éducatif associés à une spécialisation en administration systèmes & réseaux. J'adapte chaque séance à votre rythme, sans jugement, avec une vraie écoute — que vous partiez de zéro ou que vous visiez des compétences professionnelles.",
+    modules: [
+      {
+        icon: "🛡️",
+        title: "Systèmes & réseaux",
+        spec: "ma spécialisation",
+        text: "Administration Windows, découverte de Linux (Mint, Debian), compréhension de votre connexion Internet/Wi-Fi, TCP/IP, configuration et entretien de votre matériel.",
+      },
+      {
+        icon: "🔒",
+        title: "Sécurité numérique",
+        text: "Les bons réflexes face aux arnaques, mots de passe solides, sauvegardes, protection de vos données personnelles et professionnelles.",
+      },
+      {
+        icon: "🤖",
+        title: "Initiation à l'IA & prompting",
+        text: "Fonctionnement des IA (ChatGPT, Gemini…), formulation de requêtes claires et efficaces pour rédiger, organiser votre quotidien, synthétiser des documents ou booster vos projets.",
+      },
+      {
+        icon: "💻",
+        title: "Bases de la programmation & logique",
+        text: "Comprendre un programme, la logique algorithmique (variables, conditions, boucles), premiers pas concrets et ludiques dans le code.",
+      },
+      {
+        icon: "🗂️",
+        title: "Bureautique & vie quotidienne",
+        text: "Traitement de texte, tableurs, gestion sécurisée des fichiers, e-mails, démarches en ligne.",
+      },
+    ],
+    practical: "Séances individuelles ou petits groupes · à domicile (Seneffe et alentours), en visio ou chez vous dans un rayon de 20 km.",
+    superprof: {
+      label: "Disponible aussi sur Superprof",
+      link: "https://www.superprof.be/educateur-passionne-informatique-enseigne-bureautique-codage-base-outils-systemes.html",
+      detail: "1er cours offert · avis vérifiés",
+    },
+  },
   featured: [
     { name: "Barakfix", link: "https://barakfix.edukisto.win/" },
     { name: "Calendrier Familial (démo)", link: "https://caldemo.edukisto.win/" },

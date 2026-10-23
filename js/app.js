@@ -48,6 +48,26 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  const serviceGrid = document.getElementById("serviceGrid");
+  if (serviceGrid && typeof SERVICES !== "undefined") {
+    serviceGrid.innerHTML = SERVICES.map((s) => `
+      <article class="card service-card" data-id="${s.id}">
+        <div class="card-media no-img">
+          <div class="media-fallback"><span>${s.icon}</span></div>
+          <div class="media-overlay">
+            <p>${s.description}</p>
+            <span class="overlay-cta">En savoir plus →</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>${s.name} <span class="service-badge">service</span></h3>
+          <div class="card-tags">${s.tags.map((t) => `<span class="tag">${t}</span>`).join("")}</div>
+          <a class="btn primary small" href="${s.link}">🎓 Découvrir les cours</a>
+        </div>
+      </article>
+    `).join("");
+  }
+
   document.getElementById("year").textContent = new Date().getFullYear();
   Session.init();
 });
