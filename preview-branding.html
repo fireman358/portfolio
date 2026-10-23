@@ -3,208 +3,185 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EDUKISTO — glyphe hybride & couleurs</title>
+<title>EDUKISTO — logos complexes v3</title>
 <style>
 :root{
   --bg:#0f1115; --surface:#171a21; --text:#e8eaf0; --muted:#9aa3b2;
-  --accent:#ff7a18; --accent2:#ffb347; --border:#262b36; --radius:14px;
+  --petrol:#0e7490; --border:#262b36; --radius:14px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;padding:40px 20px 80px}
-.wrap{max-width:900px;margin:0 auto}
+.wrap{max-width:920px;margin:0 auto}
 h1{font-size:1.9rem;margin-bottom:.3rem}
-h1 span{color:var(--accent)}
-.kicker{color:var(--accent2);text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;font-weight:700;margin-bottom:.8rem}
-.intro{color:var(--muted);max-width:660px;margin-bottom:2.5rem}
-h2{font-size:1.15rem;margin:3rem 0 1rem;border-bottom:1px solid var(--border);padding-bottom:.5rem}
-.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:28px;margin-bottom:1.2rem}
-.glyphrow{display:flex;align-items:flex-start;gap:28px;flex-wrap:wrap}
-.glyph-big{width:110px;height:110px;flex-shrink:0}
-.glyph-demo{flex:1;min-width:250px}
+h1 span{color:#38bdf8}
+.kicker{color:#7dd3fc;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;font-weight:700;margin-bottom:.8rem}
+.intro{color:var(--muted);max-width:680px;margin-bottom:2.5rem}
+h2{font-size:1.2rem;margin:3rem 0 .4rem}
+.sub{color:var(--muted);font-size:.92rem;margin-bottom:1.2rem}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:28px;margin-bottom:1.4rem}
+.stage{display:flex;gap:26px;align-items:flex-start;flex-wrap:wrap}
+.logo-big{width:200px;height:200px;flex-shrink:0;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);display:flex;align-items:center;justify-content:center}
+.logo-big svg{width:160px;height:160px}
+.demos{flex:1;min-width:260px}
 .demo-line{display:flex;align-items:center;gap:10px;font-size:1.05rem;margin-bottom:12px}
 .sig-dash{opacity:.45;letter-spacing:-2px}
-.links{color:inherit;text-decoration:none;letter-spacing:.02em;cursor:pointer}
-.links:hover{opacity:1}
-.row{display:flex;gap:14px;align-items:center;margin-top:10px;flex-wrap:wrap}
-.chip{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:8px 12px;font-size:.85rem;color:var(--muted);display:flex;align-items:center;gap:8px}
-.onlight{background:#f7f5f2;color:#3a3a42;padding:16px;border-radius:10px;margin-top:14px;display:flex;align-items:center;justify-content:center;gap:10px;font-size:1.05rem}
-.onlight svg{color:#1d4ed8}
+.links{color:inherit;text-decoration:none;letter-spacing:.02em}
+.sizes{display:flex;gap:12px;align-items:flex-end;flex-wrap:wrap;margin-bottom:12px}
+.size{display:flex;flex-direction:column;align-items:center;gap:6px;font-size:.7rem;color:var(--muted)}
+.swatch{display:flex;gap:8px;margin-bottom:14px}
+.sw{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center}
+.sw svg{width:24px;height:24px}
+.onlight{background:#f7f5f2;color:#3a3a42;padding:16px;border-radius:10px;margin-top:4px;display:flex;align-items:center;justify-content:center;gap:10px;font-size:1.05rem}
 .onlight .sig-dash{color:#b9b4ac}
-.verdict{margin-top:14px;color:var(--muted);font-size:.92rem;border-left:3px solid var(--accent);padding-left:14px}
-.legend{display:flex;gap:18px;flex-wrap:wrap;margin-top:10px;font-size:.85rem;color:var(--muted)}
-.legend span{display:flex;align-items:center;gap:6px}
-.palgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
-.pal{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
-.pal .band{height:86px;display:flex;align-items:center;justify-content:center;gap:8px}
-.pal .body{padding:14px 16px}
-.pal h3{font-size:.95rem;margin-bottom:.25rem}
-.pal p{font-size:.82rem;color:var(--muted)}
-.tok{font-family:ui-monospace,Consolas,monospace;font-size:.78rem;background:var(--bg);padding:2px 8px;border-radius:6px;border:1px solid var(--border)}
-.sigmock{margin-top:1.2rem;display:flex;flex-direction:column;gap:10px}
-.mock{display:flex;align-items:center;gap:10px;font-size:.95rem;background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:10px 14px;flex-wrap:wrap}
-.mock .name{min-width:110px;color:var(--muted);font-size:.82rem}
-.note{background:rgba(255,122,24,.08);border:1px solid rgba(255,122,24,.35);border-radius:var(--radius);padding:18px 22px;margin-top:1.5rem;font-size:.95rem;color:var(--muted)}
-.note strong{color:var(--accent2)}
+.verdict{margin-top:16px;color:var(--muted);font-size:.92rem;border-left:3px solid var(--petrol);padding-left:14px}
+.tag{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:3px 10px;border-radius:999px;margin-bottom:10px}
+.tag.rec{background:rgba(14,116,144,.25);color:#7dd3fc;border:1px solid rgba(14,116,144,.5)}
+.tag.alt{background:rgba(255,255,255,.06);color:var(--muted);border:1px solid var(--border)}
+.anatomy{display:flex;gap:18px;flex-wrap:wrap;margin-top:16px;font-size:.85rem;color:var(--muted)}
+.anatomy div{display:flex;align-items:center;gap:8px;background:var(--bg);border:1px solid var(--border);padding:8px 14px;border-radius:8px}
+.note{background:rgba(14,116,144,.1);border:1px solid rgba(14,116,144,.4);border-radius:var(--radius);padding:18px 22px;margin-top:2rem;font-size:.95rem;color:var(--muted)}
+.note strong{color:#7dd3fc}
 footer{margin-top:3.5rem;text-align:center;color:var(--muted);font-size:.8rem;opacity:.7}
 </style>
 </head>
 <body>
 <div class="wrap">
 
-<p class="kicker">Prévisualisation — v2</p>
-<h1>Glyphe hybride <span>EDUKISTO</span> + couleur de marque</h1>
-<p class="intro">Le glyphe ci-dessous fusionne les trois idées : la <strong>flamme</strong> (les pointes courbes), la <strong>boussole</strong> (l'étoile à 4 branches, les 4 directions), le <strong>nœud</strong> (un seul tracé continu, sans lever le crayon). Et dessous : 4 pistes de bleu pour remplacer l'orange.</p>
+<p class="kicker">Prévisualisation — v3 · bleu pétrole</p>
+<h1>Logos complexes <span>EDUKISTO</span></h1>
+<p class="intro">Cette fois, les trois idées sont <strong>réellement dessinées et visibles</strong> : un nœud (des boucles qui s'entrelacent), une boussole (cercle gradué + aiguille), une flamme (le sommet vivant). Chaque logo superpose les trois éléments comme un dessin, pas un symbole abstrait.</p>
 
-<!-- ============ GLYPHE A ============ -->
-<h2>Glyphe A — l'« étoile-flamme » pleine (recommandé)</h2>
+<!-- ============ LOGO 1 ============ -->
+<h2>Logo 1 — « La boussole à flamme »</h2>
+<p class="sub">Nœud : les deux boucles qui entourent le cercle. Boussole : cercle + aiguille à 4 pointes. Flamme : le sommet, qui dépasse du cercle.</p>
 <div class="card">
-  <div class="glyphrow">
-    <svg class="glyph-big" viewBox="0 0 24 24" fill="none">
-      <path d="M12 1.6c.9 5.4 4.2 8.9 9.4 10.4-5.2 1.5-8.5 5-9.4 10.4-.9-5.4-4.2-8.9-9.4-10.4 5.2-1.5 8.5-5 9.4-10.4z" fill="currentColor" opacity=".9"/>
-    </svg>
-    <div class="glyph-demo">
+  <span class="tag rec">Recommandé</span>
+  <div class="stage">
+    <div class="logo-big">
+      <svg viewBox="0 0 64 64" fill="none">
+        <!-- nœud : deux boucles entrelacées -->
+        <path d="M32 14c-11 0-20 8-20 18s9 18 20 18 20-8 20-18" stroke="#0e7490" stroke-width="3" opacity=".45" stroke-linecap="round"/>
+        <path d="M32 14c11 0 20 8 20 18s-9 18-20 18-20-8-20-18" stroke="#0e7490" stroke-width="3" opacity=".45" stroke-linecap="round"/>
+        <!-- boussole : cadran -->
+        <circle cx="32" cy="34" r="14.5" stroke="#0e7490" stroke-width="2.6"/>
+        <!-- graduations -->
+        <path d="M32 17.5v4M32 46.5v4M15.5 34h4M44.5 34h4" stroke="#0e7490" stroke-width="1.6"/>
+        <!-- aiguille 4 branches : flamme au sommet -->
+        <path d="M32 40.5c1-4 2.4-6.4 4.2-8.6-1-.4-1.8-1-2.4-2 .2 1.5.9 2.4 1.6 3.3-2.6-1-4.4-3-5.2-6-1.6 4.2-4.6 6.6-8.2 8 3.6 1.4 6.6 3.8 8.2 8 .5-1.3 1.1-2 1.8-2.7z" fill="#0e7490"/>
+        <path d="M32 40.5c-1.2 3.8-3.2 6-6 8 1.4.9 2.6 2 3.6 3.5.6-1.6 1.5-2.7 2.4-3.5-.2 3.2.8 5.8 2.8 8 .4-3.6 2.2-6 4.8-8-2.6-2-4.4-4.4-5.2-8-.8.9-1.6 1.6-2.4 2z" fill="#0e7490" opacity=".55"/>
+        <!-- pointe flamme qui dépasse -->
+        <path d="M32 27.5c.6-3.4 2.4-5.6 4.8-7.4-.2 1.4.2 2.6.8 3.6-1.8.4-3.2 1.6-4 3.8-.6-1.6-1.6-2.6-2.8-3.2.6 1.2.8 2.2 1.2 3.2z" fill="#0e7490"/>
+      </svg>
+    </div>
+    <div class="demos">
+      <div class="swatch">
+        <div class="sw" style="background:#0e7490"><svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="34" r="14.5" stroke="#fff" stroke-width="3"/><path d="M32 40.5c1-4 2.4-6.4 4.2-8.6-1-.4-1.8-1-2.4-2 .2 1.5.9 2.4 1.6 3.3-2.6-1-4.4-3-5.2-6-1.6 4.2-4.6 6.6-8.2 8 3.6 1.4 6.6 3.8 8.2 8z" fill="#fff"/></svg></div>
+        <div class="sw" style="background:#fff"><svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="34" r="14.5" stroke="#0e7490" stroke-width="3"/><path d="M32 40.5c1-4 2.4-6.4 4.2-8.6-1-.4-1.8-1-2.4-2 .2 1.5.9 2.4 1.6 3.3-2.6-1-4.4-3-5.2-6-1.6 4.2-4.6 6.6-8.2 8 3.6 1.4 6.6 3.8 8.2 8z" fill="#0e7490"/></svg></div>
+      </div>
       <div class="demo-line">
         <span class="sig-dash">──</span>
-        <svg style="width:18px;height:18px" viewBox="0 0 24 24"><path d="M12 1.6c.9 5.4 4.2 8.9 9.4 10.4-5.2 1.5-8.5 5-9.4 10.4-.9-5.4-4.2-8.9-9.4-10.4 5.2-1.5 8.5-5 9.4-10.4z" fill="currentColor"/></svg>
+        <svg style="width:22px;height:22px" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="34" r="14.5" stroke="#38bdf8" stroke-width="4"/><path d="M32 40.5c1-4 2.4-6.4 4.2-8.6-1-.4-1.8-1-2.4-2 .2 1.5.9 2.4 1.6 3.3-2.6-1-4.4-3-5.2-6-1.6 4.2-4.6 6.6-8.2 8 3.6 1.4 6.6 3.8 8.2 8z" fill="#38bdf8"/></svg>
         <span class="links">edukisto</span>
         <span class="sig-dash">──</span>
       </div>
-      <div class="row">
-        <span class="chip"><svg style="width:14px;height:14px" viewBox="0 0 24 24"><path d="M12 1.6c.9 5.4 4.2 8.9 9.4 10.4-5.2 1.5-8.5 5-9.4 10.4-.9-5.4-4.2-8.9-9.4-10.4 5.2-1.5 8.5-5 9.4-10.4z" fill="currentColor"/></svg> 14px — test favicon</span>
-        <span class="chip"><svg style="width:32px;height:32px" viewBox="0 0 24 24"><path d="M12 1.6c.9 5.4 4.2 8.9 9.4 10.4-5.2 1.5-8.5 5-9.4 10.4-.9-5.4-4.2-8.9-9.4-10.4 5.2-1.5 8.5-5 9.4-10.4z" fill="currentColor"/></svg> 32px</span>
+      <div class="sizes">
+        <div class="size"><svg style="width:48px;height:48px" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="34" r="14.5" stroke="#38bdf8" stroke-width="2.6"/><path d="M32 40.5c1-4 2.4-6.4 4.2-8.6-1-.4-1.8-1-2.4-2 .2 1.5.9 2.4 1.6 3.3-2.6-1-4.4-3-5.2-6-1.6 4.2-4.6 6.6-8.2 8 3.6 1.4 6.6 3.8 8.2 8z" fill="#38bdf8"/></svg>48</div>
+        <div class="size"><svg style="width:28px;height:28px" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="34" r="14.5" stroke="#38bdf8" stroke-width="4"/><path d="M32 40.5c1-4 2.4-6.4 4.2-8.6-1-.4-1.8-1-2.4-2 .2 1.5.9 2.4 1.6 3.3-2.6-1-4.4-3-5.2-6-1.6 4.2-4.6 6.6-8.2 8 3.6 1.4 6.6 3.8 8.2 8z" fill="#38bdf8"/></svg>28</div>
+        <div class="size"><svg style="width:16px;height:16px" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="34" r="14.5" stroke="#38bdf8" stroke-width="6"/><path d="M32 40.5c1-4 2.4-6.4 4.2-8.6-1-.4-1.8-1-2.4-2 .2 1.5.9 2.4 1.6 3.3-2.6-1-4.4-3-5.2-6-1.6 4.2-4.6 6.6-8.2 8 3.6 1.4 6.6 3.8 8.2 8z" fill="#38bdf8"/></svg>16</div>
       </div>
-      <div class="legend">
-        <span>🔥 pointes courbes = flamme</span>
-        <span>🧭 4 branches = boussole</span>
-        <span>♾ un seul tracé = nœud</span>
-      </div>
-      <div class="onlight">
-        <span class="sig-dash">──</span>
-        <svg style="width:18px;height:18px" viewBox="0 0 24 24"><path d="M12 1.6c.9 5.4 4.2 8.9 9.4 10.4-5.2 1.5-8.5 5-9.4 10.4-.9-5.4-4.2-8.9-9.4-10.4 5.2-1.5 8.5-5 9.4-10.4z" fill="currentColor"/></svg>
-        edukisto
-        <span class="sig-dash">──</span>
+      <div class="onlight"><span class="sig-dash">──</span><svg style="width:20px;height:20px" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="34" r="14.5" stroke="#0e7490" stroke-width="4"/><path d="M32 40.5c1-4 2.4-6.4 4.2-8.6-1-.4-1.8-1-2.4-2 .2 1.5.9 2.4 1.6 3.3-2.6-1-4.4-3-5.2-6-1.6 4.2-4.6 6.6-8.2 8 3.6 1.4 6.6 3.8 8.2 8z" fill="#0e7490"/></svg> edukisto<span class="sig-dash">──</span></div>
+      <div class="anatomy">
+        <div>♾ nœud — les 2 boucles autour</div>
+        <div>🧭 boussole — cadran gradué</div>
+        <div>🔥 flamme — aiguille-flamme</div>
       </div>
     </div>
   </div>
-  <p class="verdict"><strong>Lecture :</strong> une étoile à 4 branches orientée (le cap, la boussole) dont les flancs concaves évoquent la flamme vivante, tracée d'un seul mouvement continu comme un nœud. Lisible à 14px, unique, racontée — mais pas littérale.</p>
+  <p class="verdict"><strong>Pourquoi je le recommande :</strong> à petite taille, le nœud s'efface et il reste l'essentiel — boussole + flamme — parfaitement lisible. À grande taille (vitrine, CV), on découvre le nœud entrelacé autour. Un logo à deux niveaux de lecture : c'est ce que font les grandes marques.</p>
 </div>
 
-<!-- ============ GLYPHE B ============ -->
-<h2>Glyphe B — étoile inscrite dans le cercle (plus récit)</h2>
+<!-- ============ LOGO 2 ============ -->
+<h2>Logo 2 — « Le nœud-rose des vents »</h2>
+<p class="sub">Nœud : la corde dessinée en trajet continu qui forme l'étoile. Boussole : rose des vents complète. Flamme : le centre, comme le feu intérieur.</p>
 <div class="card">
-  <div class="glyphrow">
-    <svg class="glyph-big" viewBox="0 0 24 24" fill="none">
-      <circle cx="12" cy="12" r="9.2" stroke="currentColor" stroke-width="1.2" opacity=".55"/>
-      <path d="M12 2.2c.8 4.6 3.6 7.6 7.6 9.8-4 2.2-6.8 5.2-7.6 9.8-.8-4.6-3.6-7.6-7.6-9.8 4-2.2 6.8-5.2 7.6-9.8z" fill="currentColor"/>
-    </svg>
-    <div class="glyph-demo">
+  <span class="tag alt">Alternative</span>
+  <div class="stage">
+    <div class="logo-big">
+      <svg viewBox="0 0 64 64" fill="none">
+        <!-- corde continue qui trace une étoile 4 branches (nœud), passages entrelacés -->
+        <path d="M32 6l5.4 15.2L52 20l-9.8 10.6L52 44l-14.6-1.2L32 58l-5.4-15.2L12 44l9.8-13.4L12 20l14.6 1.2z" stroke="#0e7490" stroke-width="2.8" stroke-linejoin="round" opacity=".9"/>
+        <!-- entrelacement : petites boucles aux pointes -->
+        <path d="M32 6c-1.6 1.8-1.6 3.8 0 5.6 1.6-1.8 1.6-3.8 0-5.6zM12 20c2.4.4 3.9 1.9 4.3 4.3-2.4-.4-3.9-1.9-4.3-4.3zM52 20c-2.4.4-3.9 1.9-4.3 4.3 2.4-.4 3.9-1.9 4.3-4.3zM12 44c2.4-.4 3.9-1.9 4.3-4.3-2.4.4-3.9 1.9-4.3 4.3zM52 44c-2.4-.4-3.9-1.9-4.3-4.3 2.4.4 3.9 1.9 4.3 4.3z" fill="#0e7490"/>
+        <!-- flamme centrale -->
+        <path d="M32 27c.5 2.8-.7 4.8-2.2 6.6.7.3 1.3.7 1.8 1.3-.1-1.1-.5-1.8-.9-2.5 1.7.8 2.8 2.3 3.3 4.4 1.1-2.9 3.1-4.5 5.5-5.5-2.4-1-4.4-2.6-5.5-5.5-.5 1.2-1.1 1.9-2 2.6z" fill="#0e7490"/>
+        <!-- point boussole -->
+        <circle cx="32" cy="34.5" r="1.6" fill="#0e7490"/>
+      </svg>
+    </div>
+    <div class="demos">
       <div class="demo-line">
         <span class="sig-dash">──</span>
-        <svg style="width:18px;height:18px" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.2" stroke="currentColor" stroke-width="1.2" fill="none" opacity=".55"/><path d="M12 2.2c.8 4.6 3.6 7.6 7.6 9.8-4 2.2-6.8 5.2-7.6 9.8-.8-4.6-3.6-7.6-7.6-9.8 4-2.2 6.8-5.2 7.6-9.8z" fill="currentColor"/></svg>
+        <svg style="width:22px;height:22px" viewBox="0 0 64 64" fill="none"><path d="M32 6l5.4 15.2L52 20l-9.8 10.6L52 44l-14.6-1.2L32 58l-5.4-15.2L12 44l9.8-13.4L12 20l14.6 1.2z" stroke="#38bdf8" stroke-width="4" stroke-linejoin="round"/><path d="M32 27c.5 2.8-.7 4.8-2.2 6.6.7.3 1.3.7 1.8 1.3-.1-1.1-.5-1.8-.9-2.5 1.7.8 2.8 2.3 3.3 4.4 1.1-2.9 3.1-4.5 5.5-5.5-2.4-1-4.4-2.6-5.5-5.5-.5 1.2-1.1 1.9-2 2.6z" fill="#38bdf8"/></svg>
         <span class="links">edukisto</span>
         <span class="sig-dash">──</span>
       </div>
-      <div class="onlight">
-        <span class="sig-dash">──</span>
-        <svg style="width:18px;height:18px" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.2" stroke="currentColor" stroke-width="1.4" fill="none" opacity=".55"/><path d="M12 2.2c.8 4.6 3.6 7.6 7.6 9.8-4 2.2-6.8 5.2-7.6 9.8-.8-4.6-3.6-7.6-7.6-9.8 4-2.2 6.8-5.2 7.6-9.8z" fill="currentColor"/></svg>
-        edukisto
-        <span class="sig-dash">──</span>
+      <div class="sizes">
+        <div class="size"><svg style="width:48px;height:48px" viewBox="0 0 64 64" fill="none"><path d="M32 6l5.4 15.2L52 20l-9.8 10.6L52 44l-14.6-1.2L32 58l-5.4-15.2L12 44l9.8-13.4L12 20l14.6 1.2z" stroke="#38bdf8" stroke-width="3.4" stroke-linejoin="round"/><path d="M32 27c.5 2.8-.7 4.8-2.2 6.6.7.3 1.3.7 1.8 1.3-.1-1.1-.5-1.8-.9-2.5 1.7.8 2.8 2.3 3.3 4.4 1.1-2.9 3.1-4.5 5.5-5.5-2.4-1-4.4-2.6-5.5-5.5-.5 1.2-1.1 1.9-2 2.6z" fill="#38bdf8"/></svg>48</div>
+        <div class="size"><svg style="width:16px;height:16px" viewBox="0 0 64 64" fill="none"><path d="M32 6l5.4 15.2L52 20l-9.8 10.6L52 44l-14.6-1.2L32 58l-5.4-15.2L12 44l9.8-13.4L12 20l14.6 1.2z" stroke="#38bdf8" stroke-width="5" stroke-linejoin="round"/><path d="M32 27c.5 2.8-.7 4.8-2.2 6.6.7.3 1.3.7 1.8 1.3-.1-1.1-.5-1.8-.9-2.5 1.7.8 2.8 2.3 3.3 4.4 1.1-2.9 3.1-4.5 5.5-5.5-2.4-1-4.4-2.6-5.5-5.5-.5 1.2-1.1 1.9-2 2.6z" fill="#38bdf8"/></svg>16</div>
+      </div>
+      <div class="anatomy">
+        <div>♾ nœud — corde continue + boucles aux pointes</div>
+        <div>🧭 boussole — rose des vents</div>
+        <div>🔥 flamme — le feu au centre</div>
       </div>
     </div>
   </div>
-  <p class="verdict"><strong>Variante « instrument » :</strong> l'étoile-flamme inscrite dans le cercle de la boussole. Plus explicite (on lit « instrument d'orientation »), plus classique. Le cercle disparaît presque à 14px — c'est le prix de la lisibilité : A est plus signal, B est plus récit.</p>
+  <p class="verdict"><strong>Plus riche, plus dessiné</strong> — on voit littéralement une corde nouer une rose des vents. Contrepartie : à 16px il devient dense. Il serait parfait en version « hero » (vitrine, page d'accueil) pendant que le logo 1, plus simple, servirait les signatures et favicons — un duo « logo + logomark », comme les grandes marques qui ont deux versions.</p>
 </div>
 
-<!-- ============ GLYPHE C ============ -->
-<h2>Glyphe C — monoline « fil continu » (le nœud littéral)</h2>
+<!-- ============ LOGO 3 ============ -->
+<h2>Logo 3 — « Le phare-nœud »</h2>
+<p class="sub">Nœud : deux cordes qui s'enroulent. Boussole : le faisceau orienté à 4 directions. Flamme : la flamme du phare au sommet.</p>
 <div class="card">
-  <div class="glyphrow">
-    <svg class="glyph-big" viewBox="0 0 24 24" fill="none">
-      <path d="M12 2.4c.8 4.4 3.4 7.3 7.2 9.6-3.8 2.3-6.4 5.2-7.2 9.6-.8-4.4-3.4-7.3-7.2-9.6 3.8-2.3 6.4-5.2 7.2-9.6z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-    </svg>
-    <div class="glyph-demo">
+  <span class="tag alt">Alternative</span>
+  <div class="stage">
+    <div class="logo-big">
+      <svg viewBox="0 0 64 64" fill="none">
+        <!-- faisceau boussole : 4 rayons -->
+        <path d="M32 24l-3-16M32 24l3-16M32 24L18 12M32 24l14-12" stroke="#0e7490" stroke-width="2" opacity=".5"/>
+        <!-- flamme du phare -->
+        <path d="M32 22c-3.4-1.6-5.2-4.2-5.4-8 3.6 1.2 5.6 3.8 5.9 7.8.3-1.4 1-2.5 2-3.4.2 1.8-.2 3.2-1 4.6 2.6-.8 4.6-2.4 6-5 1.2 3.8-.2 6.6-3.6 8.6-1.2.7-2.4 1-3.9 1.4z" fill="#0e7490"/>
+        <!-- corde nœud : s'enroule et descend -->
+        <path d="M24 26c-6 2-10 6.4-10 12 0 7.2 8 13 18 13s18-5.8 18-13c0-5.6-4-10-10-12" stroke="#0e7490" stroke-width="2.8" stroke-linecap="round"/>
+        <path d="M40 26c4 2.8 6 7 6 12 0 8.8-6.4 15-14 15s-14-6.2-14-15c0-5 2-9.2 6-12" stroke="#0e7490" stroke-width="2.8" stroke-linecap="round" opacity=".55"/>
+        <!-- croix d'entrelacement -->
+        <path d="M27 30c2 1.6 3 3.8 3 6.6M37 30c-2 1.6-3 3.8-3 6.6" stroke="#0e7490" stroke-width="2.2" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="demos">
       <div class="demo-line">
         <span class="sig-dash">──</span>
-        <svg style="width:18px;height:18px" viewBox="0 0 24 24"><path d="M12 2.4c.8 4.4 3.4 7.3 7.2 9.6-3.8 2.3-6.4 5.2-7.2 9.6-.8-4.4-3.4-7.3-7.2-9.6 3.8-2.3 6.4-5.2 7.2-9.6z" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linejoin="round"/></svg>
+        <svg style="width:22px;height:22px" viewBox="0 0 64 64" fill="none"><path d="M32 22c-3.4-1.6-5.2-4.2-5.4-8 3.6 1.2 5.6 3.8 5.9 7.8.3-1.4 1-2.5 2-3.4.2 1.8-.2 3.2-1 4.6 2.6-.8 4.6-2.4 6-5 1.2 3.8-.2 6.6-3.6 8.6-1.2.7-2.4 1-3.9 1.4z" fill="#38bdf8"/><path d="M24 26c-6 2-10 6.4-10 12 0 7.2 8 13 18 13s18-5.8 18-13c0-5.6-4-10-10-12" stroke="#38bdf8" stroke-width="4" stroke-linecap="round"/><path d="M40 26c4 2.8 6 7 6 12 0 8.8-6.4 15-14 15s-14-6.2-14-15c0-5 2-9.2 6-12" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" opacity=".55"/></svg>
         <span class="links">edukisto</span>
         <span class="sig-dash">──</span>
       </div>
-      <div class="onlight">
-        <span class="sig-dash">──</span>
-        <svg style="width:18px;height:18px" viewBox="0 0 24 24"><path d="M12 2.4c.8 4.4 3.4 7.3 7.2 9.6-3.8 2.3-6.4 5.2-7.2 9.6-.8-4.4-3.4-7.3-7.2-9.6 3.8-2.3 6.4-5.2 7.2-9.6z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linejoin="round"/></svg>
-        edukisto
-        <span class="sig-dash">──</span>
+      <div class="anatomy">
+        <div>♾ nœud — les 2 cordes enroulées</div>
+        <div>🧭 boussole — le faisceau à 4 rayons</div>
+        <div>🔥 flamme — le feu du phare</div>
       </div>
     </div>
   </div>
-  <p class="verdict"><strong>Variante « fil » :</strong> le même dessin en simple trait — le nœud littéral, une ligne continue. Plus léger, plus élégant en moyen format, mais moins percutant en favicon 14px où le plein (A) gagne toujours sur le trait.</p>
+  <p class="verdict"><strong>Le plus narratif :</strong> un phare (on guide depuis la côte — pompier qui veille, éducateur qui éclaire), nœud en base, faisceau-boussole. Très « dessin », très raconté, mais le plus chargé des trois — belle image pour la page « À propos », peut-être trop dense en logo quotidien.</p>
 </div>
 
-<!-- ============ COULEUR ============ -->
-<h2>La couleur : et si EDUKISTO passait au bleu ?</h2>
-<p class="intro">Vous avez raison — l'orange est la couleur par défaut de l'ère IA. Le bleu, votre couleur préférée, est un critère de marque parfaitement valide (on tient une marque qu'on aime). Quatre nuances candidates :</p>
-
-<div class="palgrid">
-  <div class="pal">
-    <div class="band" style="background:#1d4ed8;color:#fff">
-      <svg style="width:22px;height:22px" viewBox="0 0 24 24"><path d="M12 1.6c.9 5.4 4.2 8.9 9.4 10.4-5.2 1.5-8.5 5-9.4 10.4-.9-5.4-4.2-8.9-9.4-10.4 5.2-1.5 8.5-5 9.4-10.4z" fill="currentColor"/></svg>
-      <span style="font-weight:600">edukisto</span>
-    </div>
-    <div class="body">
-      <h3>Bleu roi profond</h3>
-      <p class="tok">#1d4ed8</p>
-      <p>Confiance, institutionnel, calme. Le bleu « tech sérieuse ». Risque : très répandu aussi (banques, LinkedIn).</p>
-    </div>
-  </div>
-  <div class="pal">
-    <div class="band" style="background:#0e7490;color:#fff">
-      <svg style="width:22px;height:22px" viewBox="0 0 24 24"><path d="M12 1.6c.9 5.4 4.2 8.9 9.4 10.4-5.2 1.5-8.5 5-9.4 10.4-.9-5.4-4.2-8.9-9.4-10.4 5.2-1.5 8.5-5 9.4-10.4z" fill="currentColor"/></svg>
-      <span style="font-weight:600">edukisto</span>
-    </div>
-    <div class="body">
-      <h3>Bleu pétrole / canard</h3>
-      <p class="tok">#0e7490</p>
-      <p>Mon favori : bleu avec une pointe de turquoise — distinctif, chaleureux malgré le sérieux, presque personne ne l'utilise en tech grand public. Différenciant sans être excentrique.</p>
-    </div>
-  </div>
-  <div class="pal">
-    <div class="band" style="background:#38bdf8;color:#082032">
-      <svg style="width:22px;height:22px" viewBox="0 0 24 24"><path d="M12 1.6c.9 5.4 4.2 8.9 9.4 10.4-5.2 1.5-8.5 5-9.4 10.4-.9-5.4-4.2-8.9-9.4-10.4 5.2-1.5 8.5-5 9.4-10.4z" fill="currentColor"/></svg>
-      <span style="font-weight:600">edukisto</span>
-    </div>
-    <div class="body">
-      <h3>Bleu ciel vif</h3>
-      <p class="tok">#38bdf8</p>
-      <p>Lumineux, moderne, amical. Superbe en sombre, plus difficile en clair (contraste). Souvent associé aux apps grand public ludiques.</p>
-    </div>
-  </div>
-  <div class="pal">
-    <div class="band" style="background:linear-gradient(135deg,#0e7490,#1d4ed8);color:#fff">
-      <svg style="width:22px;height:22px" viewBox="0 0 24 24"><path d="M12 1.6c.9 5.4 4.2 8.9 9.4 10.4-5.2 1.5-8.5 5-9.4 10.4-.9-5.4-4.2-8.9-9.4-10.4 5.2-1.5 8.5-5 9.4-10.4z" fill="currentColor"/></svg>
-      <span style="font-weight:600">edukisto</span>
-    </div>
-    <div class="body">
-      <h3>Duo pétrole → roi (dégradé)</h3>
-      <p class="tok">#0e7490 → #1d4ed8</p>
-      <p>Le meilleur des deux : profond mais vivant. Pour la vitrine et les boutons de marque ; en aplat dans les favicons.</p>
-    </div>
-  </div>
-</div>
-
-<h2>Application : la marque en bleu, chaque app garde sa touche</h2>
-<div class="sigmock">
-  <div class="mock"><span class="name">Barakfix (slate)</span><span class="sig-dash">──</span><svg style="width:15px;height:15px;color:#0e7490" viewBox="0 0 24 24"><path d="M12 1.6c.9 5.4 4.2 8.9 9.4 10.4-5.2 1.5-8.5 5-9.4 10.4-.9-5.4-4.2-8.9-9.4-10.4 5.2-1.5 8.5-5 9.4-10.4z" fill="currentColor"/></svg><span style="color:#0e7490">edukisto</span><span class="sig-dash">──</span><span style="margin-left:auto;font-size:.75rem;color:var(--muted)">thème app : slate/gris-bleu ✔ compatible</span></div>
-  <div class="mock"><span class="name">Calfam (chaud)</span><span class="sig-dash">──</span><svg style="width:15px;height:15px;color:#0e7490" viewBox="0 0 24 24"><path d="M12 1.6c.9 5.4 4.2 8.9 9.4 10.4-5.2 1.5-8.5 5-9.4 10.4-.9-5.4-4.2-8.9-9.4-10.4 5.2-1.5 8.5-5 9.4-10.4z" fill="currentColor"/></svg><span style="color:#0e7490">edukisto</span><span class="sig-dash">──</span><span style="margin-left:auto;font-size:.75rem;color:var(--muted)">thème app : orange chaud — contraste voulu avec le bleu ✔</span></div>
-  <div class="mock"><span class="name">Soft Love (prune)</span><span class="sig-dash">──</span><svg style="width:15px;height:15px;color:#0e7490" viewBox="0 0 24 24"><path d="M12 1.6c.9 5.4 4.2 8.9 9.4 10.4-5.2 1.5-8.5 5-9.4 10.4-.9-5.4-4.2-8.9-9.4-10.4 5.2-1.5 8.5-5 9.4-10.4z" fill="currentColor"/></svg><span style="color:#0e7490">edukisto</span><span class="sig-dash">──</span><span style="margin-left:auto;font-size:.75rem;color:var(--muted)">thème app : prune/rosé ✔ le bleu ne clash pas</span></div>
-  <div class="mock"><span class="name">Vitrine edukisto.win</span><span class="sig-dash">──</span><svg style="width:15px;height:15px;color:#38bdf8" viewBox="0 0 24 24"><path d="M12 1.6c.9 5.4 4.2 8.9 9.4 10.4-5.2 1.5-8.5 5-9.4 10.4-.9-5.4-4.2-8.9-9.4-10.4 5.2-1.5 8.5-5 9.4-10.4z" fill="currentColor"/></svg><span style="color:#38bdf8">edukisto</span><span class="sig-dash">──</span><span style="margin-left:auto;font-size:.75rem;color:var(--muted)">la vitrine passe entièrement au bleu (elle EST la marque)</span></div>
-</div>
-
+<!-- ============ NOTE ============ -->
 <div class="note">
-<strong>Ma recommandation :</strong> glyphe <strong>A</strong> (étoile-flamme pleine — la plus lisible à 14px) en <strong>bleu pétrole #0e7490</strong> pour les signatures dans les apps, et la vitrine edukisto.win migre de l'orange vers le <strong>duo pétrole→roi</strong>. Chaque app garde son thème propre (slate, chaud, prune) ; seule la marque signe en bleu. L'orange actuel de la vitrine peut rester en micro-accents secondaires ou disparaître complètement — votre appel.<br><br>
-<strong>Répondez-moi avec :</strong> glyphe (A, B ou C) + couleur (un des 4 bleus) + destin de l'orange (gardé en secondaire ou supprimé) → j'applique tout sur les 5 sites.
+<strong>Ma recommandation finale :</strong> le duo gagnant serait <strong>Logo 1 (boussole à flamme)</strong> comme logomark universel — signatures, favicons, onglets — et <strong>Logo 2 (nœud-rose des vents)</strong> en version « hero » pour la vitrine edukisto.win et l'en-tête du CV. Les grandes marques fonctionnent ainsi : un symbole simple pour les petits formats, une version riche pour les grands. Bleu pétrole <span style="font-family:ui-monospace,Consolas,monospace;background:#0f1115;padding:1px 8px;border-radius:6px;border:1px solid var(--border)">#0e7490</span> partout, éclairci en <span style="font-family:ui-monospace,Consolas,monospace;background:#0f1115;padding:1px 8px;border-radius:6px;border:1px solid var(--border)">#38bdf8</span> sur fond sombre.<br><br>
+<strong>Répondez : 1 seul logo (lequel ?) ou le duo 1+2 ?</strong> → j'applique partout : signatures des 4 applis, favicons, titres d'onglets, vitrine au bleu pétrole. La page preview sera ensuite retirée.
 </div>
 
-<footer>Prévisualisation v2 — edukisto.win/preview-branding.html</footer>
+<footer>Prévisualisation v3 — edukisto.win/preview-branding.html</footer>
 </div>
 </body>
 </html>
