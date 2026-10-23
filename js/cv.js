@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .map((l) => `<li><strong>${l.name}</strong> — ${l.level}</li>`)
     .join("");
 
-  document.getElementById("hobbies").innerHTML = `🎯 ${CV.hobbies}`;
+  document.getElementById("hobbies").innerHTML = CV.hobbies;
 
   document.getElementById("year").textContent = new Date().getFullYear();
 });

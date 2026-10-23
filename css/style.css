@@ -402,3 +402,9 @@ body:not(.session-active) .try-btn { opacity: 1; }
 .page-title{ text-align:center; font-size:clamp(1.9rem, 4vw, 2.8rem); margin-bottom:.6rem; }
 .nav-links a.active{ color:var(--text); border-bottom:2px solid #38bdf8; padding-bottom:2px; }
 .teaching-detail{ max-width:900px; margin:2.5rem auto 0; padding:0 1.5rem; }
+
+/* ===== Bloc loisirs ===== */
+.hobbies-block{ margin-top:1.4rem; }
+.hobbies-block h3{ font-size:1rem; color:#7dd3fc; margin-bottom:.5rem; }
+.hobbies-block p{ color:var(--text); font-size:.95rem; line-height:1.7; }
+.permis-line{ margin-top:.8rem; color:var(--muted); font-size:.88rem; }
