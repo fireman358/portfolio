@@ -42,6 +42,7 @@ const APPS = [
     tags: ["WordPress", "SEO", "Rédaction", "Webmastering"],
     icon: "🎯",
     url: "https://tir-defense-belgique.be/",
+    screenshot: "img/tirdefense-capture.png",
   },
 ];
 
