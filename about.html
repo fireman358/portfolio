@@ -38,7 +38,7 @@
       <div class="badges" id="cvBadges"></div>
       <p class="cv-summary" id="cvSummary"></p>
       <div class="cv-actions">
-        <a class="btn primary" href="mailto:david.demoulin@ikmail.com">✉️ Me contacter</a>
+        <a href="#" class="btn primary reveal-mail" data-m="ZGF2aWQuZGVtb3VsaW5AaWttYWlsLmNvbQ==">Me contacter</a>
       </div>
     </section>
 
@@ -85,5 +85,24 @@
 
   <script src="js/data.js"></script>
   <script src="js/cv.js"></script>
+  <script>
+    // Révélation email/téléphone (anti-spam)
+    document.querySelectorAll(".reveal-mail, .reveal-phone").forEach((el) => {
+      el.addEventListener("click", (e) => {
+        e.preventDefault();
+        try {
+          if (el.dataset.m) {
+            const mail = atob(el.dataset.m);
+            const subject = el.dataset.subject ? "?subject=" + encodeURIComponent(el.dataset.subject) : "";
+            el.href = "mailto:" + mail + subject;
+            if (el.querySelector(".way-hint")) el.querySelector(".way-hint").textContent = mail;
+          } else if (el.dataset.n) {
+            el.textContent = atob(el.dataset.n) + " (David)";
+          }
+          el.classList.add("revealed");
+        } catch (err) {}
+      });
+    });
+  </script>
 </body>
 </html>
