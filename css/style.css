@@ -521,3 +521,12 @@ footer p{ font-size:.85rem; }
   width:7px; height:7px; border-radius:50%;
   background:#38bdf8;
 }
+
+/* ===== Thumbnails: noir et blanc, couleur au survol ===== */
+.card-media img{
+  filter: grayscale(1) contrast(1.05);
+  transition: filter .35s ease;
+}
+.card:hover .card-media img{
+  filter: grayscale(0) contrast(1);
+}
