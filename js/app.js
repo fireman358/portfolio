@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <picture>
             <source srcset="${app.screenshot.replace(/\.png$/, ".webp")}" type="image/webp">
             <img src="${app.screenshot}" alt="Capture d'écran de ${app.name}" loading="lazy"
-               onerror="this.parentElement.classList.add('no-img'); this.remove();" />
+               onerror="this.closest('.card-media').classList.add('no-img'); this.remove();" />
           </picture>
           <div class="media-fallback"><span>${app.icon}</span></div>
           <div class="media-overlay">
@@ -25,8 +25,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     grid.querySelectorAll(".card-media img").forEach((img) => {
       img.addEventListener("load", () => {
-        img.parentElement.classList.add("has-img");
+        img.closest(".card-media").classList.add("has-img");
       });
+      if (img.complete && img.naturalWidth > 0) {
+        img.closest(".card-media").classList.add("has-img");
+      }
     });
 
     grid.querySelectorAll(".card-media").forEach((media) => {
