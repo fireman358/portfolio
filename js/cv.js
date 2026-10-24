@@ -13,8 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .map(
       (s) => `
       <div class="skill">
-        <div class="skill-head"><span>${s.name}</span><span>${s.level}%</span></div>
-        <div class="bar"><div class="bar-fill" style="width:${s.level}%"></div></div>
+        <div class="skill-head"><span>${s.name}</span><span class="skill-level">${s.level}</span></div>
       </div>`
     )
     .join("");
