@@ -357,20 +357,19 @@ body:not(.session-active) .try-btn { opacity: 1; }
 
 /* ===== Nouveau hero narratif ===== */
 .hero{ text-align:left; padding:4rem 1.5rem 2.5rem; }
-.hero-grid{ display:grid; grid-template-columns:minmax(160px,220px) 2fr; gap:clamp(2.5rem,5vw,5rem); align-items:center; max-width:1150px; margin:0 auto; }
+.hero-grid{ display:grid; grid-template-columns:2.2fr minmax(200px,300px); gap:clamp(2.5rem,5vw,5rem); align-items:center; max-width:1150px; margin:0 auto; }
 .hero h1{ font-size:clamp(1.7rem, 3.6vw, 3.1rem); line-height:1.22; margin-bottom:1.1rem; }
 .hero-photo{ display:flex; justify-content:center; }
 .hero-photo img{
-  width:100%; max-width:220px; aspect-ratio:1; object-fit:cover; object-position:center;
+  width:100%; max-width:280px; aspect-ratio:1; object-fit:cover; object-position:center;
   border-radius:50%; border:3px solid rgba(56,189,248,.4);
   box-shadow:0 0 28px rgba(14,116,144,.35);
 }
 @media (max-width:720px){
   .hero-grid{ grid-template-columns:1fr; }
-  .hero{ text-align:center; }
-  .hero-cta{ justify-content:center; }
-  .hero-photo{ order:-1; }
-  .hero-photo img{ width:clamp(120px, 26vw, 150px); }
+  .hero{ text-align:left; }
+  .hero-photo{ order:2; justify-content:center; }
+  .hero-photo img{ width:clamp(140px, 40vw, 180px); }
 }
 /* ===== Stats ===== */
 .stats{ padding:0 1.5rem 3rem; }
@@ -418,3 +417,30 @@ body:not(.session-active) .try-btn { opacity: 1; }
 .services-zone{ margin-top:2rem; background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:1.5rem; }
 .services-zone h3{ color:#7dd3fc; font-size:1.05rem; margin-bottom:.8rem; }
 .services-zone p{ color:var(--text); font-size:.92rem; margin-bottom:.4rem; }
+
+
+/* ===== Design Jonathan ===== */
+.hero-badges{ display:flex; gap:.6rem; margin-bottom:1.2rem; }
+.badge-cta{
+  display:inline-block; font-size:.75rem; font-weight:700; letter-spacing:.03em;
+  color:#7dd3fc; background:rgba(14,116,144,.2);
+  border:1px solid rgba(56,189,248,.45); border-radius:999px;
+  padding:4px 12px;
+}
+.hero-quote{ border:none; padding:0; margin:1.8rem 0 2.2rem; color:var(--muted); font-size:1rem; line-height:1.7; font-style:italic; }
+.hero-quote footer{ font-style:normal; font-size:.85rem; margin-top:.4rem; opacity:.85; }
+.hero-cta{ justify-content:flex-start; }
+
+/* Bouton principal: blanc sur bleu pétrole — lisible */
+.btn.primary{
+  background:#38bdf8; color:#0f1115; border-color:#38bdf8; font-weight:700;
+}
+.btn.primary:hover{ background:#7dd3fc; border-color:#7dd3fc; }
+
+/* Footer épuré */
+footer{ padding:1.8rem 1.5rem; border-top:1px solid var(--border); margin-top:0; }
+footer p{ font-size:.85rem; }
+
+/* Révélation numéro */
+.reveal-phone{ cursor:pointer; }
+.reveal-phone.revealed{ pointer-events:none; }

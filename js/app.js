@@ -71,3 +71,13 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("year").textContent = new Date().getFullYear();
   Session.init();
 });
+
+// Révélation du numéro de téléphone (anti-spam, maquette Jonathan)
+document.querySelectorAll(".reveal-phone").forEach((el) => {
+  el.addEventListener("click", (e) => {
+    e.preventDefault();
+    try { el.textContent = atob(el.dataset.n) + " (David)"; } catch (err) {}
+    el.classList.add("revealed");
+    el.removeAttribute("href");
+  });
+});
