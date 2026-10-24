@@ -72,25 +72,24 @@ document.addEventListener("DOMContentLoaded", () => {
   Session.init();
 });
 
-// Révélation du numéro de téléphone (anti-spam, maquette Jonathan)
-document.querySelectorAll(".reveal-phone").forEach((el) => {
+// Révélation email/téléphone (anti-spam): 1er clic = révèle, clic suivant = ouvre
+document.querySelectorAll(".reveal-mail, .reveal-phone").forEach((el) => {
   el.addEventListener("click", (e) => {
-    e.preventDefault();
-    try { el.textContent = atob(el.dataset.n) + " (David)"; } catch (err) {}
-    el.classList.add("revealed");
-    el.removeAttribute("href");
-  });
-});
-
-// Révélation de l'email (anti-spam)
-document.querySelectorAll(".reveal-mail").forEach((el) => {
-  el.addEventListener("click", (e) => {
+    if (el.classList.contains("revealed")) return;
     e.preventDefault();
     try {
-      const mail = atob(el.dataset.m);
-      const subject = el.dataset.subject ? "?subject=" + encodeURIComponent(el.dataset.subject) : "";
-      el.href = "mailto:" + mail + subject;
-      el.querySelector(".way-hint").textContent = mail;
+      if (el.dataset.m) {
+        const mail = atob(el.dataset.m);
+        const subject = el.dataset.subject ? "?subject=" + encodeURIComponent(el.dataset.subject) : "";
+        el.href = "mailto:" + mail + subject;
+        const hint = el.querySelector(".way-hint");
+        if (hint) hint.textContent = mail;
+      } else if (el.dataset.n) {
+        const num = atob(el.dataset.n);
+        const hint = el.querySelector(".way-hint");
+        if (hint) hint.textContent = num + " (David)";
+        el.removeAttribute("href");
+      }
       el.classList.add("revealed");
     } catch (err) {}
   });

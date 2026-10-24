@@ -101,15 +101,20 @@
     // Révélation email/téléphone (anti-spam)
     document.querySelectorAll(".reveal-mail, .reveal-phone").forEach((el) => {
       el.addEventListener("click", (e) => {
+        if (el.classList.contains("revealed")) return;
         e.preventDefault();
         try {
           if (el.dataset.m) {
             const mail = atob(el.dataset.m);
             const subject = el.dataset.subject ? "?subject=" + encodeURIComponent(el.dataset.subject) : "";
             el.href = "mailto:" + mail + subject;
-            if (el.querySelector(".way-hint")) el.querySelector(".way-hint").textContent = mail;
+            const hint = el.querySelector(".way-hint");
+            if (hint) hint.textContent = mail;
           } else if (el.dataset.n) {
-            el.textContent = atob(el.dataset.n) + " (David)";
+            const num = atob(el.dataset.n);
+            const hint = el.querySelector(".way-hint");
+            if (hint) hint.textContent = num + " (David)";
+            el.removeAttribute("href");
           }
           el.classList.add("revealed");
         } catch (err) {}
