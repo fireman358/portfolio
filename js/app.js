@@ -4,8 +4,11 @@ document.addEventListener("DOMContentLoaded", () => {
     grid.innerHTML = APPS.map((app) => `
       <article class="card" data-id="${app.id}">
         <div class="card-media" data-screenshot="${app.screenshot || ""}">
-          <img src="${app.screenshot}" alt="Capture d'écran de ${app.name}" loading="lazy"
+          <picture>
+            <source srcset="${app.screenshot.replace(/\.png$/, ".webp")}" type="image/webp">
+            <img src="${app.screenshot}" alt="Capture d'écran de ${app.name}" loading="lazy"
                onerror="this.parentElement.classList.add('no-img'); this.remove();" />
+          </picture>
           <div class="media-fallback"><span>${app.icon}</span></div>
           <div class="media-overlay">
             <p>${app.description}</p>

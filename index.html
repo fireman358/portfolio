@@ -12,10 +12,48 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_BE">
   <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://edukisto.win/">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Edukisto — David Demoulin",
+    "url": "https://edukisto.win/",
+    "image": "https://edukisto.win/og-image.png",
+    "description": "Dépannage informatique à domicile et à distance, cours d'informatique et création de sites web. Seneffe et 20 km alentour.",
+    "@id": "https://edukisto.win/#business",
+    "priceRange": "$$",
+    "areaServed": {
+      "@type": "GeoCircle",
+      "center": { "@type": "Place", "name": "Seneffe, Belgique" },
+      "radius": "20000"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Seneffe",
+      "addressRegion": "Hainaut",
+      "addressCountry": "BE"
+    },
+    "founder": { "@id": "https://edukisto.win/about.html#david" },
+    "sameAs": [
+      "https://www.superprof.be/educateur-passionne-informatique-enseigne-bureautique-codage-base-outils-systemes.html"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Edukisto",
+    "url": "https://edukisto.win/",
+    "inLanguage": "fr-BE",
+    "publisher": { "@id": "https://edukisto.win/#business" }
+  }
+  </script>
 </head>
 <body>
   <header>
@@ -49,7 +87,10 @@
         </div>
       </div>
       <div class="hero-photo">
-        <img src="img/david.jpg" alt="David Demoulin" loading="eager">
+        <picture>
+          <source srcset="img/david.webp" type="image/webp">
+          <img src="img/david.jpg" alt="David Demoulin" loading="eager" width="400" height="400">
+        </picture>
         <p class="hero-caption">David Demoulin<br><span>Seneffe · Belgique</span></p>
       </div>
     </div>
