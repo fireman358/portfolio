@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentions légales · Edukisto</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <a href="index.html" class="brand-wrap"><span class="brand-stack"><span class="brand-line"><span class="nav-logo"><svg viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M32 3l5.2 18.2 10.8-5.2-5.2 10.8L61 32l-18.2 5.2 5.2 10.8-10.8-5.2L32 61l-5.2-18.2-10.8 5.2 5.2-10.8L3 32l18.2-5.2-5.2-10.8 10.8 5.2z" fill="#38bdf8"/><path d="M32 32c-1.6-2-3-3.1-4.8-3.1a4.7 4.7 0 1 0 0 9.4c1.8 0 3.2-1.1 4.8-3.1 1.6 2 3 3.1 4.8 3.1a4.7 4.7 0 1 0 0-9.4c-1.8 0-3.2 1.1-4.8 3.1z" stroke="#0f1115" stroke-width="2.4"/></svg></span><span class="brand-name">Edukisto</span></span></span></a>
+      <div class="nav-links">
+        <a href="services.html">Dépannage &amp; services</a>
+        <a href="transmets.html">Formations</a>
+        <a href="construis.html">Mes réalisations</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="legal-page">
+    <h1>Mentions légales</h1>
+
+    <section class="legal-block">
+      <h2>Éditeur du site</h2>
+      <p>
+        <strong>David Demoulin</strong> — indépendant à titre complémentaire<br>
+        Siège : Seneffe, Belgique (adresse complète communiquée sur demande motivée)<br>
+        Contact : via les formulaires de contact de ce site<br>
+        Numéro d'entreprise (BCE) : <span class="placeholder">[à compléter — voir vos documents d'inscription au guichet d'entreprise]</span><br>
+        Numéro de TVA : non assujetti — régime de franchise pour petites entreprises (art. 44 §2 du Code TVA)<br>
+        <em>Mention à porter sur les factures : « Dispensé du paiement de la TVA — art. 44 §2 du Code TVA »</em>
+      </p>
+    </section>
+
+    <section class="legal-block">
+      <h2>Responsable éditorial</h2>
+      <p>David Demoulin, Seneffe (Belgique).</p>
+    </section>
+
+    <section class="legal-block">
+      <h2>Hébergement</h2>
+      <p>
+        Ce site est hébergé par <strong>Cloudflare, Inc.</strong><br>
+        101 Townsend Street, San Francisco, CA 94107, États-Unis<br>
+        <a href="https://www.cloudflare.com/" target="_blank" rel="noopener">www.cloudflare.com</a>
+      </p>
+    </section>
+
+    <section class="legal-block">
+      <h2>Données personnelles &amp; confidentialité</h2>
+      <p>
+        Ce site <strong>ne collecte aucune donnée personnelle</strong>, ne dépose <strong>aucun cookie</strong>
+        et n'utilise <strong>aucun outil de mesure d'audience</strong>. Les applications proposées
+        (formations, services) stockent vos données uniquement dans <em>votre</em> navigateur (localStorage),
+        jamais sur un serveur. Les coordonnées de contact (email, téléphone) sont volontairement
+        masquées et affichées uniquement sur clic, par respect de votre navigation.
+      </p>
+      <p>
+        Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et d'effacement
+        de vos données — contactez-nous via le site pour l'exercer.
+      </p>
+    </section>
+
+    <section class="legal-block">
+      <h2>Propriété intellectuelle</h2>
+      <p>
+        L'ensemble des contenus de ce site (textes, logo, applications, design) est la propriété
+        de David Demoulin. Toute reproduction, modification ou diffusion sans autorisation écrite
+        préalable est interdite.
+      </p>
+    </section>
+
+    <section class="legal-block">
+      <h2>Tarifs &amp; conditions</h2>
+      <p>
+        Les tarifs des formations sont affichés sur la page <a href="transmets.html">Formations</a>.
+        Les prestations de dépannage font l'objet d'un <strong>devis gratuit préalable</strong> — aucun
+        engagement sans accord explicite des deux parties.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="about.html" style="color:inherit;text-decoration:underline dotted">CV</a> · © <span id="year"></span> David Demoulin</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("year").textContent = new Date().getFullYear();
+    });
+  </script>
+</body>
+</html>

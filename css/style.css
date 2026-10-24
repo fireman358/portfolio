@@ -490,3 +490,20 @@ footer p{ font-size:.85rem; }
 }
 
 .btn.ghost:hover{ background:#7dd3fc; border-color:#7dd3fc; color:#0f1115; }
+
+/* ===== Page mentions légales ===== */
+.legal-page{ max-width:800px; margin:0 auto; padding:2.5rem 1.5rem 3rem; }
+.legal-page h1{ font-size:1.8rem; margin-bottom:1.5rem; color:#38bdf8; }
+.legal-block{ margin-bottom:1.8rem; }
+.legal-block h2{ font-size:1.05rem; margin-bottom:.6rem; }
+.legal-block p{ font-size:.92rem; line-height:1.8; }
+.placeholder{ color:#7dd3fc; font-style:italic; }
+
+/* ===== Tarifs ===== */
+.tarifs-block{ margin-top:2rem; background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:1.5rem; }
+.tarifs-block h3{ color:#7dd3fc; font-size:1.1rem; margin-bottom:1rem; }
+.tarifs-table{ width:100%; border-collapse:collapse; }
+.tarifs-table td{ padding:.55rem 0; font-size:.95rem; border-bottom:1px solid var(--border); }
+.tarifs-table .prix{ text-align:right; font-weight:700; color:#38bdf8; }
+.tarifs-table .was{ font-size:.8rem; opacity:.5; text-decoration:line-through; margin-left:.4rem; font-weight:400; }
+.tarifs-note{ font-size:.8rem; opacity:.7; margin-top:1rem; }
