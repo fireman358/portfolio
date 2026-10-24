@@ -510,3 +510,12 @@ footer p{ font-size:.85rem; }
 
 /* ===== Flat icons ===== */
 .flat-icon{ color:#38bdf8; }
+
+/* ===== Liste zone & modalités ===== */
+.zone-list{ list-style:none; padding:0; }
+.zone-list li{ position:relative; padding-left:1.6rem; margin-bottom:.6rem; font-size:.92rem; }
+.zone-list li::before{
+  content:""; position:absolute; left:0; top:.55em;
+  width:7px; height:7px; border-radius:50%;
+  background:#38bdf8;
+}
