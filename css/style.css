@@ -356,8 +356,8 @@ body:not(.session-active) .try-btn { opacity: 1; }
 .service-badge{ font-size:.6rem; background:rgba(56,189,248,.15); color:#7dd3fc; padding:2px 8px; border-radius:999px; border:1px solid rgba(56,189,248,.4); text-transform:uppercase; letter-spacing:.08em; font-weight:700; vertical-align:middle; margin-left:6px; }
 
 /* ===== Nouveau hero narratif ===== */
-.hero{ text-align:left; padding:4rem 1.5rem 2.5rem; }
-.hero-grid{ display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; align-items:center; max-width:1150px; margin:0 auto; width:100%; }
+.hero{ text-align:left; padding:0; }
+.hero-grid{ display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; align-items:center; max-width:1150px; margin:0 auto; padding:4rem 1.5rem 2.5rem; }
 .hero h1{ font-size:clamp(1.7rem, 3.6vw, 3.1rem); line-height:1.22; margin-bottom:1.1rem; color:#38bdf8; }
 .hero h1 .accent{ color:#38bdf8; }
 .hero-photo{ display:flex; justify-content:center; }
