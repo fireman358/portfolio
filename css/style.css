@@ -28,9 +28,9 @@ body {
   border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
-  background: rgba(15, 17, 21, 0.9);
+  background: rgba(16, 16, 16, 0.92);
   backdrop-filter: blur(8px);
-  z-index: 10;
+  z-index: 100;
 }
 
 .brand { font-weight: 800; font-size: 1.2rem; color: var(--text); text-decoration: none; }
@@ -441,7 +441,7 @@ body:not(.session-active) .try-btn { opacity: 1; }
 .btn.primary:hover{ background:#7dd3fc; border-color:#7dd3fc; }
 
 /* Footer épuré */
-footer{ padding:1.8rem 1.5rem; border-top:1px solid var(--border); margin-top:0; }
+footer{ padding:1.8rem 1.5rem; border-top:1px solid var(--border); margin-top:0; background:#101010; }
 footer p{ font-size:.85rem; }
 
 /* Révélation numéro */
