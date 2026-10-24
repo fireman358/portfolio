@@ -20,17 +20,20 @@ body {
 
 .hidden { display: none !important; }
 
+header {
+  position: sticky;
+  top: 0;
+  background: rgba(16, 16, 16, 0.92);
+  backdrop-filter: blur(8px);
+  z-index: 100;
+}
+
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
   border-bottom: 1px solid var(--border);
-  position: sticky;
-  top: 0;
-  background: rgba(16, 16, 16, 0.92);
-  backdrop-filter: blur(8px);
-  z-index: 100;
 }
 
 .brand { font-weight: 800; font-size: 1.2rem; color: var(--text); text-decoration: none; }
