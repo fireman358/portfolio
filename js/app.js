@@ -9,13 +9,13 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="media-fallback"><span>${app.icon}</span></div>
           <div class="media-overlay">
             <p>${app.description}</p>
-            <span class="overlay-cta">Cliquez pour tester →</span>
+            <span class="overlay-cta">Cliquez pour tester <svg class="flat-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </div>
         </div>
         <div class="card-body">
           <h3>${app.name}</h3>
           <div class="card-tags">${app.tags.map((t) => `<span class="tag">${t}</span>`).join("")}</div>
-          <button class="btn primary small try-btn" data-url="${app.url}" title="Ouvre l'application dans un nouvel onglet">Tester l'appli →</button>
+          <button class="btn primary small try-btn" data-url="${app.url}" title="Ouvre l'application dans un nouvel onglet">Tester l'appli <svg class="flat-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
         </div>
       </article>
     `).join("");
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
       btn.addEventListener("click", () => {
         if (!Session.isActive()) {
           const ok = confirm(
-            "⏳ Votre session découverte a expiré.\n\n" +
+            "Votre session découverte a expiré.\n\n" +
             "Relancer une session d'1 heure pour ouvrir cette application ?"
           );
           if (!ok) return;
@@ -56,13 +56,13 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="media-fallback"><span>${s.icon}</span></div>
           <div class="media-overlay">
             <p>${s.description}</p>
-            <span class="overlay-cta">En savoir plus →</span>
+            <span class="overlay-cta">En savoir plus <svg class="flat-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </div>
         </div>
         <div class="card-body">
           <h3>${s.name} <span class="service-badge">service</span></h3>
           <div class="card-tags">${s.tags.map((t) => `<span class="tag">${t}</span>`).join("")}</div>
-          <a class="btn primary small" href="${s.link}">🎓 Découvrir les cours</a>
+          <a class="btn primary small" href="${s.link}"><svg class="flat-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg> Découvrir les cours</a>
         </div>
       </article>
     `).join("");

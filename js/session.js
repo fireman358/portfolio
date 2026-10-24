@@ -52,9 +52,9 @@ const Session = {
     btn.classList.toggle("hidden", !active);
     banner.classList.toggle("hidden", !active);
     if (startBtn) {
-      startBtn.textContent = active
-        ? "🔓 Accès découverte actif"
-        : "▶ Démarrer l'accès découverte (1h)";
+      startBtn.innerHTML = active
+        ? `<svg class="flat-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 7.9-.9"/></svg> Accès découverte actif`
+        : `<svg class="flat-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 5v14l12-7z"/></svg> Démarrer l'accès découverte (1h)`;
       startBtn.disabled = active;
     }
     document.body.classList.toggle("session-active", active);
@@ -66,7 +66,7 @@ const Session = {
         btn.classList.add("hidden");
         banner.classList.add("hidden");
         if (startBtn) {
-          startBtn.textContent = "▶ Démarrer l'accès découverte (1h)";
+          startBtn.innerHTML = `<svg class="flat-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 5v14l12-7z"/></svg> Démarrer l'accès découverte (1h)`;
           startBtn.disabled = false;
         }
         return;

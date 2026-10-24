@@ -519,7 +519,9 @@ footer p{ font-size:.85rem; }
 .tarifs-note{ font-size:.8rem; opacity:.7; margin-top:1rem; }
 
 /* ===== Flat icons ===== */
-.flat-icon{ color:#38bdf8; }
+.flat-icon{ color:#38bdf8; vertical-align:-3px; }
+.btn .flat-icon{ margin-left:.2rem; }
+.overlay-cta .flat-icon{ width:14px; height:14px; }
 
 /* ===== Liste zone & modalités ===== */
 .zone-list{ list-style:none; padding:0; }
