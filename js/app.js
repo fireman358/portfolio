@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="card-body">
           <h3>${app.name}</h3>
           <div class="card-tags">${app.tags.map((t) => `<span class="tag">${t}</span>`).join("")}</div>
-          <button class="btn primary small try-btn" data-url="${app.url}" title="Ouvre l'application dans un nouvel onglet">🔓 Tester l'appli</button>
+          <button class="btn primary small try-btn" data-url="${app.url}" title="Ouvre l'application dans un nouvel onglet">Tester l'appli →</button>
         </div>
       </article>
     `).join("");

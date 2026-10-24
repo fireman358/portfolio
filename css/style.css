@@ -111,6 +111,8 @@ body {
 .card:hover { border-color: var(--accent); transform: translateY(-4px); }
 .card-icon { font-size: 2rem; }
 .card p { color: var(--muted); font-size: 0.95rem; flex-grow: 1; }
+.card-body { display:flex; flex-direction:column; gap:.75rem; flex-grow:1; }
+.card-body .try-btn, .card-body .btn { margin-top:auto; width:fit-content; }
 
 .card-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; }
 .tag {
