@@ -81,3 +81,17 @@ document.querySelectorAll(".reveal-phone").forEach((el) => {
     el.removeAttribute("href");
   });
 });
+
+// Révélation de l'email (anti-spam)
+document.querySelectorAll(".reveal-mail").forEach((el) => {
+  el.addEventListener("click", (e) => {
+    e.preventDefault();
+    try {
+      const mail = atob(el.dataset.m);
+      const subject = el.dataset.subject ? "?subject=" + encodeURIComponent(el.dataset.subject) : "";
+      el.href = "mailto:" + mail + subject;
+      el.querySelector(".way-hint").textContent = mail;
+      el.classList.add("revealed");
+    } catch (err) {}
+  });
+});
