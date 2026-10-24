@@ -1,11 +1,11 @@
 :root {
-  --bg: #0f1115;
-  --surface: #171a21;
-  --text: #e8eaf0;
-  --muted: #e8eaf0;
+  --bg: #f3f3f3;
+  --surface: #ffffff;
+  --text: #1a1d23;
+  --muted: #3a3f4a;
   --accent: #38bdf8;
   --accent-2: #38bdf8;
-  --border: #262b36;
+  --border: #d8dbe0;
   --radius: 8px;
 }
 
@@ -484,7 +484,7 @@ footer p{ font-size:.85rem; }
 .brand-name{
   font-family:Georgia, "Times New Roman", serif;
   font-size:1.35rem; font-weight:800; letter-spacing:.05em;
-  color:#ffffff;  /* blanc pur */
+  color:#0f1115;
 }
 @media (max-width:820px){
   .brand-line .nav-logo svg{ width:24px; height:24px; }
