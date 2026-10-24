@@ -1,11 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("cvName").textContent = CV.name;
   document.getElementById("cvRole").textContent = CV.role;
-  document.getElementById("cvLoc").textContent = `📍 ${CV.location}`;
+  const loc = document.getElementById("cvLoc");
+  loc.innerHTML = `${ICONS.mapPin(18)} ${CV.location}`;
   document.getElementById("cvSummary").textContent = CV.summary;
 
   document.getElementById("cvBadges").innerHTML = CV.badges
-    .map((b) => `<span class="badge">${b}</span>`)
+    .map((b) => `<span class="badge">${ICONS[b.icon](16)} ${b.label}</span>`)
     .join("");
 
   document.getElementById("skillsList").innerHTML = CV.skills
@@ -54,10 +55,10 @@ document.addEventListener("DOMContentLoaded", () => {
     .map(
       (i) => `
       <div class="soft-card">
-        <div class="soft-icon">${i.icon}</div>
+        <div class="soft-icon">${ICONS[i.icon]()}</div>
         <h3>${i.title}</h3>
         <p>${i.text}</p>
-        ${i.link ? `<a class="btn primary small" href="${i.link}" target="_blank" rel="noopener">${i.linkLabel || "Découvrir"}</a>` : ""}
+        ${i.link ? `<a class="btn primary small full" href="${i.link}" target="_blank" rel="noopener">${i.linkLabel || "Découvrir"}</a>` : ""}
       </div>`
     )
     .join("");
@@ -71,12 +72,12 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("teachingProof").textContent = t.proof;
     document.getElementById("teachingModules").innerHTML = t.modules.map((m) => `
       <div class="teach-card">
-        <div class="teach-icon">${m.icon}</div>
+        <div class="teach-icon">${ICONS[m.icon]()}</div>
         <h3>${m.title}${m.spec ? ` <span class="spec-tag">${m.spec}</span>` : ""}</h3>
         <p>${m.text}</p>
       </div>
     `).join("");
-    document.getElementById("teachingPractical").textContent = "📍 " + t.practical;
+    document.getElementById("teachingPractical").innerHTML = ICONS.mapPin(18) + " " + t.practical;
     const sp = document.getElementById("superprofLink");
     sp.href = t.superprof.link;
     sp.title = t.superprof.label + " — " + t.superprof.detail;

@@ -205,6 +205,11 @@ footer {
 }
 
 .cv-loc { color: var(--muted); margin-top: 0.4rem; }
+.cv-loc svg { vertical-align: -3px; margin-right: 2px; }
+.badge svg { vertical-align: -3px; }
+.soft-icon svg, .teach-icon svg { display: block; margin-bottom: 0.5rem; }
+.soft-icon svg { width: 28px; height: 28px; }
+.btn.small.full { display: flex; width: 100%; justify-content: center; margin-top: 1rem; }
 .cv-summary { color: var(--muted); max-width: 640px; margin: 1.5rem auto 0; font-size: 1.05rem; }
 .cv-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem; }
 
