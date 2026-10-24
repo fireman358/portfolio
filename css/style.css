@@ -68,8 +68,8 @@ body {
   transition: transform 0.15s ease, background 0.15s ease;
 }
 .btn:hover { transform: translateY(-2px); }
-.btn.primary { background: linear-gradient(135deg, #0e7490, #1d4ed8); color: #1a1a1a; }
-.btn.ghost { background: transparent; border-color: var(--border); color: var(--text); }
+.btn.primary { background: #38bdf8; color: #0f1115; }
+.btn.ghost { background: #38bdf8; border-color: #38bdf8; color: #0f1115; }
 .btn.small { padding: 0.5rem 1rem; font-size: 0.9rem; }
 .btn:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
 
@@ -488,3 +488,5 @@ footer p{ font-size:.85rem; }
   .brand-line .nav-logo svg{ width:24px; height:24px; }
   .brand-name{ font-size:1.1rem; }
 }
+
+.btn.ghost:hover{ background:#7dd3fc; border-color:#7dd3fc; color:#0f1115; }
