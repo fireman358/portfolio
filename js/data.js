@@ -93,6 +93,7 @@ const CV = {
     { icon: "rocket", label: "4 applications en ligne" },
   ],
   skills: [
+    { name: "Relation client & communication", level: "Expert" },
     { name: "Support Helpdesk & diagnostic", level: "Expert" },
     { name: "Maintenance & réparation hardware", level: "Avancé" },
     { name: "Réseaux TCP/IP (LAN/WAN, VLAN)", level: "Confirmé" },
@@ -100,7 +101,6 @@ const CV = {
     { name: "GLPI (ITIL, gestion de parc)", level: "Confirmé" },
     { name: "Développement web (HTML/CSS/JS, Cloudflare)", level: "Confirmé" },
     { name: "Linux (Debian)", level: "En cours d'apprentissage" },
-    { name: "Relation client & communication", level: "Expert" },
   ],
   certifications: [
     { title: "Technicien Informatique — Titre de Validation des Compétences", org: "Consortium de Validation (Bruxelles)", date: "2026" },
