@@ -90,7 +90,7 @@ const CV = {
     { icon: "tools", label: "25 ans de terrain" },
     { icon: "ambulance", label: "Gestion d'urgence" },
     { icon: "laptop", label: "Reconversion IT certifiée" },
-    { icon: "rocket", label: "4 applications en ligne" },
+    { icon: "rocket", label: "5 applications en ligne" },
   ],
   skills: [
     { name: "Relation client & communication", level: "Expert" },
@@ -114,7 +114,7 @@ const CV = {
     {
       year: "2025–2026",
       title: "Développeur d'applications web (indépendant)",
-      text: "Conception et mise en ligne de 4 applications sur Cloudflare (Barakfix, Calendrier Familial, Keskônmange Lulu, Espace Manager Soft Love) + reconversion certifiée en Technicien IT.",
+      text: "Conception et mise en ligne de 5 applications sur Cloudflare (Barakfix, Calendrier Familial, Keskônmange Lulu, Espace Manager Soft Love) + webmastering de Tir & Défense Belgique + reconversion certifiée en Technicien IT.",
     },
     {
       year: "2008–2025",
@@ -241,5 +241,6 @@ const CV = {
     { name: "Calendrier Familial (démo)", link: "https://caldemo.edukisto.win/" },
     { name: "Keskônmange Lulu ?", link: "https://repas.edukisto.win/" },
     { name: "Espace Manager (démo)", link: "https://manager.edukisto.win/" },
+    { name: "Tir & Défense Belgique", link: "https://tir-defense-belgique.be/" },
   ],
 };
