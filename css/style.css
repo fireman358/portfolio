@@ -444,3 +444,11 @@ footer p{ font-size:.85rem; }
 /* Révélation numéro */
 .reveal-phone{ cursor:pointer; }
 .reveal-phone.revealed{ pointer-events:none; }
+
+
+/* Header marque unique */
+.brand .accent{ font-weight:400; font-size:.72em; opacity:.75; letter-spacing:0; }
+@media (max-width:820px){
+  .brand .accent{ display:none; }  /* mobile: juste "Edukisto" */
+  .brand-wrap{ flex-direction:row; align-items:center; gap:8px; }
+}
