@@ -100,7 +100,7 @@ const CV = {
     { name: "Windows Server / Active Directory", level: "Confirmé" },
     { name: "GLPI (ITIL, gestion de parc)", level: "Confirmé" },
     { name: "Développement web (HTML/CSS/JS, Cloudflare)", level: "Confirmé" },
-    { name: "Linux (Debian)", level: "En cours d'apprentissage" },
+    { name: "Linux (Debian)", level: "Intermédiaire" },
   ],
   certifications: [
     { title: "Technicien Informatique — Titre de Validation des Compétences", org: "Consortium de Validation (Bruxelles)", date: "2026" },
