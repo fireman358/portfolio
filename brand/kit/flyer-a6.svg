@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 1748" font-family="DejaVu Sans">
+  <!-- Flyer A6 300 DPI (105x148mm) -->
+  <rect width="1240" height="1748" fill="#333333"/>
+
+  <!-- Logo -->
+  <g transform="translate(464, 170) scale(7.8125)">
+    <path d="M32 3l5.2 18.2 10.8-5.2-5.2 10.8L61 32l-18.2 5.2 5.2 10.8-10.8-5.2L32 61l-5.2-18.2-10.8 5.2 5.2-10.8L3 32l18.2-5.2-5.2-10.8 10.8 5.2z" fill="#38bdf8"/>
+    <path d="M32 32c-1.6-2-3-3.1-4.8-3.1a4.7 4.7 0 1 0 0 9.4c1.8 0 3.2-1.1 4.8-3.1 1.6 2 3 3.1 4.8 3.1a4.7 4.7 0 1 0 0-9.4c-1.8 0-3.2 1.1-4.8 3.1z" stroke="#0f1115" stroke-width="2.2"/>
+  </g>
+
+  <!-- Nom + accroche -->
+  <text x="620" y="920" text-anchor="middle" font-size="190" font-weight="bold" fill="#ffffff" letter-spacing="4">Edukisto</text>
+  <text x="620" y="1060" text-anchor="middle" font-size="82" fill="#38bdf8">Votre informaticien de proximité</text>
+
+  <!-- Zone QR (le QR est collé en post-traitement) -->
+  <rect x="400" y="1200" width="440" height="440" rx="18" fill="#ffffff"/>
+
+  <!-- Bas -->
+  <text x="620" y="1710" text-anchor="middle" font-size="46" fill="#ffffff">Scannez pour découvrir mes applications</text>
+  <text x="620" y="1640" text-anchor="middle" font-size="40" fill="#7dd3fc">edukisto.win · 1er contact gratuit</text>
+</svg>
