@@ -89,6 +89,10 @@
       </div>
 
       <div class="contact-ways">
+        <a href="#" class="btn primary contact-way reveal-wa" data-w="aHR0cHM6Ly93YS5tZS8zMjQ4NjIwNjA4MQ==">
+          <span class="way-label">Sur WhatsApp</span>
+          <span class="way-hint">Réponse rapide — mon canal préféré</span>
+        </a>
         <a href="#" class="btn primary contact-way reveal-phone" data-n="MDQ4NiAyMCA2MCA4MQ==">
           <span class="way-label">Par téléphone</span>
           <span class="way-hint">Cliquez pour voir le numéro</span>
@@ -113,7 +117,7 @@
     document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("year").textContent = new Date().getFullYear();
     });
-    document.querySelectorAll(".reveal-mail, .reveal-phone").forEach((el) => {
+    document.querySelectorAll(".reveal-mail, .reveal-phone, .reveal-wa").forEach((el) => {
       el.addEventListener("click", (e) => {
         if (el.classList.contains("revealed")) return;
         e.preventDefault();
@@ -124,7 +128,11 @@
             el.href = "mailto:" + mail + subject;
             const hint = el.querySelector(".way-hint");
             if (hint) hint.textContent = mail;
-          } else if (el.dataset.n) {
+          } else if (el.dataset.w) {
+        el.href = atob(el.dataset.w);
+        const hint = el.querySelector(".way-hint");
+        if (hint) hint.textContent = "WhatsApp ouvert — écrivez-moi !";
+      } else if (el.dataset.n) {
             const num = atob(el.dataset.n);
             const hint = el.querySelector(".way-hint");
             if (hint) hint.textContent = num + " (David)";

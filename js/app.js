@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Révélation email/téléphone (anti-spam): 1er clic = révèle, clic suivant = ouvre
-document.querySelectorAll(".reveal-mail, .reveal-phone").forEach((el) => {
+document.querySelectorAll(".reveal-mail, .reveal-phone, .reveal-wa").forEach((el) => {
   el.addEventListener("click", (e) => {
     if (el.classList.contains("revealed")) return;
     e.preventDefault();
@@ -90,6 +90,10 @@ document.querySelectorAll(".reveal-mail, .reveal-phone").forEach((el) => {
         el.href = "mailto:" + mail + subject;
         const hint = el.querySelector(".way-hint");
         if (hint) hint.textContent = mail;
+      } else if (el.dataset.w) {
+        el.href = atob(el.dataset.w);
+        const hint = el.querySelector(".way-hint");
+        if (hint) hint.textContent = "WhatsApp ouvert — écrivez-moi !";
       } else if (el.dataset.n) {
         const num = atob(el.dataset.n);
         const hint = el.querySelector(".way-hint");
