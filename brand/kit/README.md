@@ -4,7 +4,9 @@
 - `logo-star-1024.png` / `logo-star-2048.png` — étoile bleue (#38bdf8), fond sombre, PNG transparent
 - `logo-star-teal-1024.png` — variante teal (#0e7490), fond clair
 - `../edukisto-mark-dark.svg` / `../edukisto-mark.svg` — versions vectorielles (à privilégier pour l'impression : agrandissement sans perte)
-- `logo-lockup-slogan.svg/.png` — logo horizontal + "Edukisto" + accroche "Votre informaticien de proximité"
+- `logo-lockup-slogan.svg` — lockup horizontal + "Edukisto" + accroche "Votre informaticien de proximité" (transparent, à redimensionner librement)
+- `banner-lockup-bg.svg/.png` — même bannière avec fond anthracite #333333 (2300x560, ratio ~4:1)
+- `banner-lockup-2400.png` / `banner-lockup-3450.png` — bannières haute résolution fond transparent
 
 ## QR codes (vers https://edukisto.win/)
 - `qr-code-dark.png` — bleu sur anthracite #333333 (supports numériques)
