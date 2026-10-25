@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 360" font-family="DejaVu Sans">
+  <!-- Couverture Facebook : affichage desktop 820x312, mobile 640x360.
+       Tout le contenu est dans la zone sûre commune (x: 90-730, y: 24-336). -->
+  <rect width="820" height="360" fill="#333333"/>
+
+
+  <!-- Logo (centre x=410) -->
+  <g transform="translate(357.5, 45.1) scale(1.64)">
+    <path d="M32 3l5.2 18.2 10.8-5.2-5.2 10.8L61 32l-18.2 5.2 5.2 10.8-10.8-5.2L32 61l-5.2-18.2-10.8 5.2 5.2-10.8L3 32l18.2-5.2-5.2-10.8 10.8 5.2z" fill="#38bdf8"/>
+    <path d="M32 32c-1.6-2-3-3.1-4.8-3.1a4.7 4.7 0 1 0 0 9.4c1.8 0 3.2-1.1 4.8-3.1 1.6 2 3 3.1 4.8 3.1a4.7 4.7 0 1 0 0-9.4c-1.8 0-3.2 1.1-4.8 3.1z" stroke="#0f1115" stroke-width="2.2"/>
+  </g>
+
+  <text x="410" y="215" text-anchor="middle" font-size="58" font-weight="bold" fill="#ffffff" letter-spacing="2">Edukisto</text>
+  <text x="410" y="258" text-anchor="middle" font-size="26" fill="#38bdf8">Votre informaticien de proximité</text>
+
+  <rect x="330" y="278" width="160" height="3" rx="1.5" fill="#38bdf8" opacity="0.6"/>
+  <text x="410" y="312" text-anchor="middle" font-size="24" fill="#7dd3fc">edukisto.win</text>
+</svg>
