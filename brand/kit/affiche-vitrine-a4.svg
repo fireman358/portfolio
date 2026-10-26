@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2480 3508" font-family="DejaVu Sans">
+  <!-- Affiche vitrine Edukisto — A4 300 DPI (210x297mm), extensible A3 -->
+  <rect width="2480" height="3508" fill="#333333"/>
+
+  <!-- Halos décoratifs -->
+  <defs>
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3d3d3d"/>
+      <stop offset="100%" stop-color="#383838"/>
+    </linearGradient>
+  </defs>
+  <circle cx="1240" cy="500" r="560" fill="url(#halo)"/>
+  <circle cx="220" cy="3260" r="420" fill="url(#halo)"/>
+  <circle cx="2350" cy="180" r="380" fill="url(#halo)"/>
+
+  <!-- Étoiles filigrane -->
+  <g transform="translate(1960,120) scale(2.6)" opacity="0.07">
+    <path d="M32 3l5.2 18.2 10.8-5.2-5.2 10.8L61 32l-18.2 5.2 5.2 10.8-10.8-5.2L32 61l-5.2-18.2-10.8 5.2 5.2-10.8L3 32l18.2-5.2-5.2-10.8 10.8 5.2z" fill="#38bdf8"/>
+  </g>
+  <g transform="translate(80,3050) scale(1.8)" opacity="0.05">
+    <path d="M32 3l5.2 18.2 10.8-5.2-5.2 10.8L61 32l-18.2 5.2 5.2 10.8-10.8-5.2L32 61l-5.2-18.2-10.8 5.2 5.2-10.8L3 32l18.2-5.2-5.2-10.8 10.8 5.2z" fill="#38bdf8"/>
+  </g>
+
+  <!-- Logo -->
+  <g transform="translate(1065, 240) scale(11.25)">
+    <path d="M32 3l5.2 18.2 10.8-5.2-5.2 10.8L61 32l-18.2 5.2 5.2 10.8-10.8-5.2L32 61l-5.2-18.2-10.8 5.2 5.2-10.8L3 32l18.2-5.2-5.2-10.8 10.8 5.2z" fill="#38bdf8"/>
+    <path d="M32 32c-1.6-2-3-3.1-4.8-3.1a4.7 4.7 0 1 0 0 9.4c1.8 0 3.2-1.1 4.8-3.1 1.6 2 3 3.1 4.8 3.1a4.7 4.7 0 1 0 0-9.4c-1.8 0-3.2 1.1-4.8 3.1z" stroke="#0f1115" stroke-width="2.2"/>
+  </g>
+
+  <!-- Marque + accroche -->
+  <text x="1240" y="1180" text-anchor="middle" font-size="330" font-weight="bold" fill="#ffffff" letter-spacing="6">Edukisto</text>
+  <text x="1240" y="1350" text-anchor="middle" font-size="115" fill="#38bdf8">Votre informaticien de proximité</text>
+
+  <!-- 4 cartes services -->
+  <g>
+    <!-- Carte 1 : dépannage -->
+    <rect x="130" y="1560" width="1060" height="420" rx="20" fill="url(#card)" stroke="#38bdf8" stroke-opacity="0.35" stroke-width="3"/>
+    <g transform="translate(210,1660) scale(3.2)" stroke="#38bdf8" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="4" y="5" width="16" height="10" rx="1"/><path d="M2 18h20"/>
+    </g>
+    <text x="590" y="1800" text-anchor="middle" font-size="86" font-weight="bold" fill="#ffffff">Dépannage à domicile</text>
+    <text x="590" y="1900" text-anchor="middle" font-size="60" fill="#9ca3af">PC lent, virus, Wi-Fi, imprimantes</text>
+
+    <!-- Carte 2 : cours -->
+    <rect x="1290" y="1560" width="1060" height="420" rx="20" fill="url(#card)" stroke="#38bdf8" stroke-opacity="0.35" stroke-width="3"/>
+    <g transform="translate(1370,1660) scale(3.2)" stroke="#38bdf8" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/>
+    </g>
+    <text x="1750" y="1800" text-anchor="middle" font-size="86" font-weight="bold" fill="#ffffff">Cours d'informatique</text>
+    <text x="1750" y="1900" text-anchor="middle" font-size="60" fill="#9ca3af">Tous niveaux · 1er cours offert</text>
+
+    <!-- Carte 3 : sécurité -->
+    <rect x="130" y="2030" width="1060" height="420" rx="20" fill="url(#card)" stroke="#38bdf8" stroke-opacity="0.35" stroke-width="3"/>
+    <g transform="translate(210,2130) scale(3.2)" stroke="#38bdf8" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+    </g>
+    <text x="590" y="2270" text-anchor="middle" font-size="86" font-weight="bold" fill="#ffffff">Sécurité numérique</text>
+    <text x="590" y="2370" text-anchor="middle" font-size="60" fill="#9ca3af">Arnaques, sauvegardes, mots de passe</text>
+
+    <!-- Carte 4 : sites web -->
+    <rect x="1290" y="2030" width="1060" height="420" rx="20" fill="url(#card)" stroke="#38bdf8" stroke-opacity="0.35" stroke-width="3"/>
+    <g transform="translate(1370,2130) scale(3.2)" stroke="#38bdf8" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+    </g>
+    <text x="1750" y="2270" text-anchor="middle" font-size="86" font-weight="bold" fill="#ffffff">Sites web pour pros</text>
+    <text x="1750" y="2370" text-anchor="middle" font-size="60" fill="#9ca3af">Vitrines, référencement, maintenance</text>
+  </g>
+
+  <!-- QR zone (QR collé en post-traitement) -->
+  <rect x="890" y="2560" width="700" height="700" rx="24" fill="#ffffff"/>
+  <text x="1240" y="3360" text-anchor="middle" font-size="62" fill="#ffffff">Scannez pour découvrir mes services</text>
+
+  <!-- Pied de page contact -->
+  <text x="1240" y="3170" text-anchor="middle" font-size="72" font-weight="bold" fill="#7dd3fc">WhatsApp 0486 20 60 81 · facebook.com/Edukisto</text>
+  <text x="1240" y="3460" text-anchor="middle" font-size="62" fill="#ffffff">Seneffe &amp; 20 km alentour — 1er contact gratuit</text>
+</svg>
