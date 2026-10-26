@@ -13,6 +13,7 @@
 
 ## Affiches prêtes à imprimer (300 DPI)
 - `affiche-vitrine-a4.svg/.png` / `affiche-vitrine-a3.png` — affiche PUB vitrine : logo, marque, accroche, 4 services (dépannage, cours, sécurité, sites web), QR code scannable, contact WhatsApp/Facebook, zone Seneffe. A4 (2480x3508) et A3 (3508x4961)
+- Le SVG est la source de vérité : les PNG A4/A3 sont régénérés automatiquement par GitHub Actions (`.github/workflows/render-affiche-vitrine.yml`) à chaque modification du SVG
 - `poster-a4.svg/.png` — affiche A4 (210x297 mm) : logo centré, marque, accroche, QR intégré, CTA puis pied de page
 - `flyer-a6.svg/.png` — flyer A6 (105x148 mm) : format tract/cartes de visite
 - Le QR est embarqué en data URI dans les SVG : ils s'affichent et s'impriment tels quels, sans étape de compositing
