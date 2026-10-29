@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3508 2480" font-family="DejaVu Sans">
+  <!-- A3 assembly - PAGE 1/2 : A4 paysage 300 DPI (297x210mm) - moitié HAUTE -->
+  <rect width="3508" height="2480" fill="#333333"/>
+  <defs>
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3d3d3d"/>
+      <stop offset="100%" stop-color="#383838"/>
+    </linearGradient>
+  </defs>
+  <circle cx="1754" cy="420" r="480" fill="url(#halo)"/>
+  <g transform="translate(2960,60) scale(2.4)" opacity="0.07">
+    <path d="M32 3l5.2 18.2 10.8-5.2-5.2 10.8L61 32l-18.2 5.2 5.2 10.8-10.8-5.2L32 61l-5.2-18.2-10.8 5.2 5.2-10.8L3 32l18.2-5.2-5.2-10.8 10.8 5.2z" fill="#38bdf8"/>
+  </g>
+
+  <!-- Logo -->
+  <g transform="translate(1502, 130) scale(12.6)">
+    <path d="M32 3l5.2 18.2 10.8-5.2-5.2 10.8L61 32l-18.2 5.2 5.2 10.8-10.8-5.2L32 61l-5.2-18.2-10.8 5.2 5.2-10.8L3 32l18.2-5.2-5.2-10.8 10.8 5.2z" fill="#38bdf8"/>
+    <path d="M32 32c-1.6-2-3-3.1-4.8-3.1a4.7 4.7 0 1 0 0 9.4c1.8 0 3.2-1.1 4.8-3.1 1.6 2 3 3.1 4.8 3.1a4.7 4.7 0 1 0 0-9.4c-1.8 0-3.2 1.1-4.8 3.1z" stroke="#0f1115" stroke-width="2.2"/>
+  </g>
+
+  <!-- Marque + accroche -->
+  <text x="1754" y="1160" text-anchor="middle" font-size="360" font-weight="bold" fill="#ffffff" letter-spacing="8">Edukisto</text>
+  <text x="1754" y="1330" text-anchor="middle" font-size="130" fill="#38bdf8">Votre informaticien de proximité</text>
+
+  <!-- 4 cartes services (2 colonnes x 2 rangées) -->
+  <!-- rangée 1 -->
+  <rect x="140" y="1500" width="1560" height="380" rx="22" fill="url(#card)" stroke="#38bdf8" stroke-opacity="0.35" stroke-width="3"/>
+  <g transform="translate(260,1600) scale(3.4)" stroke="#38bdf8" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="4" y="5" width="16" height="10" rx="1"/><path d="M2 18h20"/>
+  </g>
+  <text x="1050" y="1730" text-anchor="middle" font-size="95" font-weight="bold" fill="#ffffff">Dépannage à domicile</text>
+  <text x="1050" y="1830" text-anchor="middle" font-size="64" fill="#9ca3af">PC lent, virus, Wi-Fi, imprimantes</text>
+
+  <rect x="1808" y="1500" width="1560" height="380" rx="22" fill="url(#card)" stroke="#38bdf8" stroke-opacity="0.35" stroke-width="3"/>
+  <g transform="translate(1928,1600) scale(3.4)" stroke="#38bdf8" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/>
+  </g>
+  <text x="2718" y="1730" text-anchor="middle" font-size="95" font-weight="bold" fill="#ffffff">Cours d'informatique</text>
+  <text x="2718" y="1830" text-anchor="middle" font-size="64" fill="#9ca3af">Tous niveaux · 1er cours offert</text>
+
+  <!-- rangée 2 -->
+  <rect x="140" y="1980" width="1560" height="380" rx="22" fill="url(#card)" stroke="#38bdf8" stroke-opacity="0.35" stroke-width="3"/>
+  <g transform="translate(260,2080) scale(3.4)" stroke="#38bdf8" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+  </g>
+  <text x="1050" y="2210" text-anchor="middle" font-size="95" font-weight="bold" fill="#ffffff">Sécurité numérique</text>
+  <text x="1050" y="2310" text-anchor="middle" font-size="64" fill="#9ca3af">Arnaques, sauvegardes, mots de passe</text>
+
+  <rect x="1808" y="1980" width="1560" height="380" rx="22" fill="url(#card)" stroke="#38bdf8" stroke-opacity="0.35" stroke-width="3"/>
+  <g transform="translate(1928,2080) scale(3.4)" stroke="#38bdf8" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+  </g>
+  <text x="2718" y="2210" text-anchor="middle" font-size="95" font-weight="bold" fill="#ffffff">Sites web pour pros</text>
+  <text x="2718" y="2310" text-anchor="middle" font-size="64" fill="#9ca3af">Vitrines, référencement, maintenance</text>
+</svg>

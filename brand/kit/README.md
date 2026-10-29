@@ -11,6 +11,15 @@
 - `qr-code-print.png` — noir sur blanc (impression : contraste maximal, scan garanti)
 - Correction d'erreur niveau H : robuste même abîmé/froissé (t-shirt, tract plié)
 
+## Affiche A3 avec une imprimante A4 : 2 pages à assembler
+
+Si ton imprimante ne fait que l'A4 et que tu veux un affichage A3 (297x420 mm) :
+1. Imprime `affiche-vitrine-a3-page1.png` (moitié haute : logo, marque, 4 services)
+2. Imprime `affiche-vitrine-a3-page2.png` (moitié basse : QR code, contact, marque)
+3. **Paramètres d'impression** : format A4 **paysage**, "Ajuster à la page" (100%), papier photo ou 160-200 g pour la vitrine
+4. Assemble : aligne les deux feuilles bord à bord (la coupe tombe entre les sections, aucun contenu n'est coupé) et scotche au dos + petit morceau transparent sur la jointure devant (invisible sur fond anthracite)
+5. Option "sans scotch visible" : fais découper et plastifier les deux A4 en une seule feuille A3 chez un magasin de impression (Copy Center, etc.) pour ~5-10 €
+
 ## Affiches prêtes à imprimer (300 DPI)
 - `affiche-vitrine-a4.svg/.png` / `affiche-vitrine-a3.png` — affiche PUB vitrine : logo, marque, accroche, 4 services (dépannage, cours, sécurité, sites web), QR code scannable, contact WhatsApp/Facebook, zone Seneffe. A4 (2480x3508) et A3 (3508x4961)
 - Le SVG est la source de vérité : les PNG A4/A3 sont régénérés automatiquement par GitHub Actions (`.github/workflows/render-affiche-vitrine.yml`) à chaque modification du SVG
