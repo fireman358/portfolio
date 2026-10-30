@@ -65,6 +65,15 @@ const APPS = [
     url: "https://tir-defense-belgique.be/",
     screenshot: "img/tirdefense-capture.png",
   },
+  {
+    id: "tdwars",
+    name: "TD Wars",
+    description: "Jeu de tower defense sci-fi : d\u00e9ployez extracteurs, blasters et canons ioniques pour repousser 100 vagues d'ennemis sur des secteurs d\u00e9sertique \u00e0 conqu\u00e9rir. Perks, Sabre et strat\u00e9gie d'\u00e9conomie de cr\u00e9dits.",
+    tags: ["Web", "Jeu", "Strat\u00e9gie", "Canvas"],
+    icon: ICONS.sword(),
+    url: "https://td-wars.edukisto.win/",
+    screenshot: "img/tdwars.png",
+  },
 ];
 
 // Carte service affichée sur l'accueil après les applis
@@ -90,7 +99,7 @@ const CV = {
     { icon: "tools", label: "25 ans de terrain" },
     { icon: "ambulance", label: "Gestion d'urgence" },
     { icon: "laptop", label: "Reconversion IT certifiée" },
-    { icon: "rocket", label: "5 applications en ligne" },
+    { icon: "rocket", label: "6 applications en ligne" },
   ],
   skills: [
     { name: "Relation client & communication", level: "Expert" },
@@ -114,7 +123,7 @@ const CV = {
     {
       year: "2025–2026",
       title: "Développeur d'applications web (indépendant)",
-      text: "Conception et mise en ligne de 5 applications sur Cloudflare (Barakfix, Calendrier Familial, Keskônmange Lulu, Espace Manager Soft Love) + webmastering de Tir & Défense Belgique + reconversion certifiée en Technicien IT.",
+      text: "Conception et mise en ligne de 6 applications sur Cloudflare (Barakfix, Calendrier Familial, Keskônmange Lulu, Espace Manager Soft Love, TD Wars) + webmastering de Tir & Défense Belgique + reconversion certifiée en Technicien IT.",
     },
     {
       year: "2008–2025",
